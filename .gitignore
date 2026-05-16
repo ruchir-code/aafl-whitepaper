@@ -1,0 +1,21 @@
+# Build scratch
+/tmp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local intermediates
+/whitepaper/aafl-whitepaper-v1.2-verification.html

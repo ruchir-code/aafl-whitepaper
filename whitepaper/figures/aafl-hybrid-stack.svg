@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="hybrid-title hybrid-desc" font-family="Charter, Georgia, 'Times New Roman', serif">
+  <title id="hybrid-title">AAFL framework architecture — the hybrid stack</title>
+  <desc id="hybrid-desc">Three horizontal cross-cutting layers stacked top to bottom: Governance Layer (escalation, classification, audit, accreditation alignment, IP discipline) sets the policy boundary; Evaluation-as-Spec Layer (performance evals defined before agents draft; rubric blocks Develop) sets the quality boundary; Orchestration Layer (agent routing, HITL gates, model selection, audit log) routes work within both boundaries. Beneath the three layers, ADDIE's five phases — Analyze, Design, Develop, Implement, Evaluate — run left to right as the framework's vertical spine. Each phase connects to the three layers above via bidirectional arrows: the layers shape the phase's work, and the phase reports back into the layers' audit, eval, and governance state. Beneath the ADDIE row, the Translator's Loop is shown as a horizontal sequence of four numbered cards inside a containment box — step 1 Draft (agent produces), step 2 Discern (human judges), step 3 Validate (eval against rubric), step 4 Release (archive to audit trail) — with a footer note indicating the cycle runs continuously per artifact. At the bottom sits the framework's anchor: workplace performance, Kirkpatrick L3 and L4 — every phase, every gate, every eval ties back to whether the intervention moved time-to-competency, error rate, throughput, or transfer-to-job, not whether the learner passed.</desc>
+
+  <defs>
+    <!-- Filled triangle for vertical connector arrows (down into Loop, down into Anchor).
+         Kept as an SVG marker because WeasyPrint handles fill-based markers reliably.
+         Stroke-based open-chevron markers were removed because WeasyPrint mis-renders
+         them; the loop's arc arrowheads are now drawn as explicit chevron subpaths. -->
+    <marker id="hs-arrow-end-small" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#1e3a5f"/>
+    </marker>
+  </defs>
+
+  <!-- Parchment background -->
+  <rect width="800" height="650" fill="#faf8f1"/>
+
+  <!-- ============== THREE CROSS-CUTTING LAYERS ============== -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif">
+    <!-- Governance -->
+    <rect x="40" y="22" width="720" height="58" rx="4" fill="#fdfcf6" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="58" y="44" font-size="13" font-weight="700" fill="#1e3a5f" letter-spacing="0.5">GOVERNANCE LAYER</text>
+    <text x="225" y="44" font-size="11" font-weight="500" fill="#5a6270">— policy boundary</text>
+    <text x="58" y="65" font-size="11" fill="#303641">escalation · classification · audit · accreditation · IP discipline</text>
+
+    <!-- Eval-as-Spec -->
+    <rect x="40" y="88" width="720" height="58" rx="4" fill="#fdfcf6" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="58" y="110" font-size="13" font-weight="700" fill="#1e3a5f" letter-spacing="0.5">EVALUATION-AS-SPEC LAYER</text>
+    <text x="318" y="110" font-size="11" font-weight="500" fill="#5a6270">— quality boundary</text>
+    <text x="58" y="131" font-size="11" fill="#303641">performance evals defined BEFORE agents draft; rubric blocks Develop</text>
+
+    <!-- Orchestration -->
+    <rect x="40" y="154" width="720" height="58" rx="4" fill="#fdfcf6" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="58" y="176" font-size="13" font-weight="700" fill="#1e3a5f" letter-spacing="0.5">ORCHESTRATION LAYER</text>
+    <text x="262" y="176" font-size="11" font-weight="500" fill="#5a6270">— routes within both boundaries</text>
+    <text x="58" y="197" font-size="11" fill="#303641">agent routing · HITL gates · model selection · audit log</text>
+  </g>
+
+  <!-- ============== BIDIRECTIONAL ARROWS ============== -->
+  <!-- Five pairs of arrows (▲ on the left going UP into the layers, ▼ on the right going DOWN into the ADDIE row), one pair centered above each ADDIE phase column. Arrowheads are drawn explicitly as chevron paths combined with the shaft — no SVG marker rotation, so the heads always point the intended way. -->
+  <g stroke="#1e3a5f" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Column 1 (ANALYZE, x≈112) -->
+    <path d="M 101 227 L 105 222 L 109 227 M 105 222 L 105 262"/>
+    <path d="M 119 222 L 119 262 M 115 257 L 119 262 L 123 257"/>
+    <!-- Column 2 (DESIGN, x≈256) -->
+    <path d="M 245 227 L 249 222 L 253 227 M 249 222 L 249 262"/>
+    <path d="M 263 222 L 263 262 M 259 257 L 263 262 L 267 257"/>
+    <!-- Column 3 (DEVELOP, x≈400) -->
+    <path d="M 389 227 L 393 222 L 397 227 M 393 222 L 393 262"/>
+    <path d="M 407 222 L 407 262 M 403 257 L 407 262 L 411 257"/>
+    <!-- Column 4 (IMPLEMENT, x≈544) -->
+    <path d="M 533 227 L 537 222 L 541 227 M 537 222 L 537 262"/>
+    <path d="M 551 222 L 551 262 M 547 257 L 551 262 L 555 257"/>
+    <!-- Column 5 (EVALUATE, x≈688) -->
+    <path d="M 677 227 L 681 222 L 685 227 M 681 222 L 681 262"/>
+    <path d="M 695 222 L 695 262 M 691 257 L 695 262 L 699 257"/>
+  </g>
+
+  <!-- ============== ADDIE PHASE ROW ============== -->
+  <g font-family="-apple-system, BlinkMacSystemFont, Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="0.6">
+    <rect x="50" y="265" width="124" height="56" rx="4" fill="#e3e9f1" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="112" y="299" fill="#1e3a5f" text-anchor="middle">ANALYZE</text>
+
+    <rect x="194" y="265" width="124" height="56" rx="4" fill="#e3e9f1" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="256" y="299" fill="#1e3a5f" text-anchor="middle">DESIGN</text>
+
+    <rect x="338" y="265" width="124" height="56" rx="4" fill="#e3e9f1" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="400" y="299" fill="#1e3a5f" text-anchor="middle">DEVELOP</text>
+
+    <rect x="482" y="265" width="124" height="56" rx="4" fill="#e3e9f1" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="544" y="299" fill="#1e3a5f" text-anchor="middle">IMPLEMENT</text>
+
+    <rect x="626" y="265" width="124" height="56" rx="4" fill="#e3e9f1" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="688" y="299" fill="#1e3a5f" text-anchor="middle">EVALUATE</text>
+  </g>
+
+  <!-- ADDIE spine annotation -->
+  <text x="400" y="343" font-family="Charter, Georgia, serif" font-size="11" font-style="italic" fill="#5a6270" text-anchor="middle">ADDIE spine — preserved phase names; the framework's contribution runs across them</text>
+
+  <!-- Connector down to Translator's Loop -->
+  <line x1="400" y1="358" x2="400" y2="385" stroke="#1e3a5f" stroke-width="1" fill="none" marker-end="url(#hs-arrow-end-small)"/>
+
+  <!-- ============== TRANSLATOR'S LOOP — CARDS-IN-A-BOX ============== -->
+  <!-- A linear four-step sequence rendered as numbered cards inside a labelled
+       containment box. The box title carries the "what this is" semantic; the
+       numbered circles (1→2→3→4) carry the ordering; the unicode loop glyph ↺
+       in the footer signals the cyclical nature. No arrow markers, no chevron
+       paths, no tangent geometry — just rectangles, circles, and text. Renders
+       identically in HTML and PDF. -->
+
+  <!-- Outer containment box -->
+  <rect x="40" y="395" width="720" height="146" rx="6" fill="#fdfcf6" stroke="#1e3a5f" stroke-width="1.5"/>
+
+  <!-- Block title (top of box) -->
+  <text x="400" y="421" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#1e3a5f" text-anchor="middle" letter-spacing="0.8">THE TRANSLATOR'S LOOP</text>
+  <text x="400" y="438" font-family="Charter, Georgia, serif" font-size="10" font-style="italic" fill="#5a6270" text-anchor="middle">every artifact in every phase passes through this four-step inner cycle</text>
+
+  <!-- Divider rule -->
+  <line x1="80" y1="448" x2="720" y2="448" stroke="#d8d2bf" stroke-width="0.5"/>
+
+  <!-- Four numbered step cards — each 145 wide × 64 tall, 18-unit gaps.
+       Row total: 4×145 + 3×18 = 634. Centered: (800-634)/2 = 83. -->
+
+  <!-- Card 1: Draft -->
+  <g transform="translate(83, 458)">
+    <rect width="145" height="64" rx="4" fill="#faf8f1" stroke="#d8d2bf" stroke-width="0.5"/>
+    <circle cx="22" cy="22" r="11" fill="#1e3a5f"/>
+    <text x="22" y="26" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle">1</text>
+    <text x="89" y="32" font-family="Charter, Georgia, serif" font-size="15" font-style="italic" font-weight="600" fill="#1e3a5f" text-anchor="middle">Draft</text>
+    <text x="89" y="50" font-family="-apple-system, Inter, sans-serif" font-size="8.5" fill="#5a6270" text-anchor="middle">agent produces</text>
+  </g>
+
+  <!-- Card 2: Discern -->
+  <g transform="translate(246, 458)">
+    <rect width="145" height="64" rx="4" fill="#faf8f1" stroke="#d8d2bf" stroke-width="0.5"/>
+    <circle cx="22" cy="22" r="11" fill="#1e3a5f"/>
+    <text x="22" y="26" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle">2</text>
+    <text x="89" y="32" font-family="Charter, Georgia, serif" font-size="15" font-style="italic" font-weight="600" fill="#1e3a5f" text-anchor="middle">Discern</text>
+    <text x="89" y="50" font-family="-apple-system, Inter, sans-serif" font-size="8.5" fill="#5a6270" text-anchor="middle">human judges</text>
+  </g>
+
+  <!-- Card 3: Validate -->
+  <g transform="translate(409, 458)">
+    <rect width="145" height="64" rx="4" fill="#faf8f1" stroke="#d8d2bf" stroke-width="0.5"/>
+    <circle cx="22" cy="22" r="11" fill="#1e3a5f"/>
+    <text x="22" y="26" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle">3</text>
+    <text x="89" y="32" font-family="Charter, Georgia, serif" font-size="15" font-style="italic" font-weight="600" fill="#1e3a5f" text-anchor="middle">Validate</text>
+    <text x="89" y="50" font-family="-apple-system, Inter, sans-serif" font-size="8.5" fill="#5a6270" text-anchor="middle">eval against rubric</text>
+  </g>
+
+  <!-- Card 4: Release -->
+  <g transform="translate(572, 458)">
+    <rect width="145" height="64" rx="4" fill="#faf8f1" stroke="#d8d2bf" stroke-width="0.5"/>
+    <circle cx="22" cy="22" r="11" fill="#1e3a5f"/>
+    <text x="22" y="26" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle">4</text>
+    <text x="89" y="32" font-family="Charter, Georgia, serif" font-size="15" font-style="italic" font-weight="600" fill="#1e3a5f" text-anchor="middle">Release</text>
+    <text x="89" y="50" font-family="-apple-system, Inter, sans-serif" font-size="8.5" fill="#5a6270" text-anchor="middle">archive to audit trail</text>
+  </g>
+
+  <!-- Loop indicator (unicode glyph ↺, not an arrow marker) -->
+  <text x="400" y="535" font-family="Charter, Georgia, serif" font-size="9.5" font-style="italic" fill="#5a6270" text-anchor="middle">↺ runs continuously per artifact — completes one cycle before the artifact passes to the next phase</text>
+
+  <!-- Connector down to Anchor -->
+  <line x1="400" y1="555" x2="400" y2="582" stroke="#1e3a5f" stroke-width="1" fill="none" marker-end="url(#hs-arrow-end-small)"/>
+
+  <!-- ============== ANCHOR BAND ============== -->
+  <rect x="40" y="590" width="720" height="48" rx="4" fill="#1e3a5f"/>
+  <text x="60" y="614" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" letter-spacing="0.6">ANCHOR — Workplace performance · Kirkpatrick L3/L4</text>
+  <text x="60" y="630" font-family="Charter, Georgia, serif" font-size="10" fill="#e3e9f1">Every phase, every gate, every eval ties back to whether the intervention moved time-to-competency, error rate, throughput, or transfer-to-job.</text>
+</svg>

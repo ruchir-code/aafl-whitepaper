@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you reference AAFL in academic or professional work, please cite the whitepaper as follows."
+title: "AAFL: An Agent-Augmented Framework for Learning"
+abstract: >
+  AAFL is an instructional systems design framework for the agent era — where
+  AI agents author first drafts and humans serve as Human-in-the-Loop judgment-holders,
+  anchored in workplace performance as the organizing outcome. The framework keeps
+  ADDIE's five-phase spine and adds eight HITL decision gates, three cross-cutting
+  layers (Governance, Evaluation-as-Spec, Orchestration), the Translator's Loop,
+  a Proportional Restraint Scale (PRS-1 through PRS-4) with classification-aware
+  maturity caps, and a six-dimension eval framework.
+authors:
+  - family-names: Bakshi
+    given-names: Ruchir
+    website: "https://rbakshi.com"
+type: report
+version: "1.2"
+date-released: 2026-05-14
+url: "https://instructionalai.org"
+repository-code: "https://github.com/ruchir-code/aafl-whitepaper"
+license-url: "https://github.com/ruchir-code/aafl-whitepaper/blob/main/LICENSE"
+keywords:
+  - instructional design
+  - instructional systems design
+  - ADDIE
+  - AI agents
+  - human-in-the-loop
+  - workplace performance
+  - human performance technology
+  - federal training
+  - agent-augmented learning
+identifiers:
+  - type: doi
+    value: "PENDING"
+    description: "Concept DOI (always points to latest version) — to be minted on Zenodo at first GitHub release."

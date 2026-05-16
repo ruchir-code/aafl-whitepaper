@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="grid-title grid-desc" font-family="Charter, Georgia, 'Times New Roman', serif">
+  <title id="grid-title">The eight AAFL HITL decision gates mapped to ADDIE phases</title>
+  <desc id="grid-desc">The eight AAFL HITL decision gates mapped to ADDIE phases. Gate 1 (Learner Reality, pedagogical) and Gate 2 (Performance Outcome, pedagogical, blocks Develop) sit in the Analyze phase. Gate 3 (Pedagogical Strategy, pedagogical) sits in the Design phase. Gates 4 (Source Truth), 5 (Equity and Accessibility), and 6 (Assessment Validity) — all production gates — cluster in the Develop phase. Gate 7 (Release, production) sits in the Implement phase. Gate 8 (Performance-Effect, pedagogical) sits in the Evaluate phase. The four pedagogical gates 1, 2, 3, and 8 bookend the framework and remain humans-only at every maturity level. The four production gates 4, 5, 6, and 7 cluster in Develop and Implement and are agent-prepared and human-signed, becoming sampleable at higher maturity. Gate 2 is marked as the framework's structural blocker: until the eval rubric is signed at Gate 2, the Develop phase cannot run.</desc>
+
+  <!-- Parchment background -->
+  <rect width="800" height="500" fill="#faf8f1"/>
+
+  <!-- ============== PHASE COLUMNS — five columns, each 144 wide, 16 gap ============== -->
+  <!-- Starting x = 8; column width 144; total width = 5×144 + 4×16 = 784. -->
+
+  <!-- COLUMN 1 — ANALYZE -->
+  <g transform="translate(8, 16)">
+    <rect width="144" height="32" rx="4" fill="#1e3a5f"/>
+    <text x="72" y="22" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.8">ANALYZE</text>
+
+    <!-- Gate 1: Learner Reality (pedagogical) -->
+    <g transform="translate(0, 48)">
+      <rect width="144" height="82" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="6" height="82" fill="#1e3a5f"/>
+      <text x="16" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#1e3a5f" letter-spacing="0.3">GATE 1</text>
+      <text x="16" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Learner</text>
+      <text x="16" y="56" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Reality</text>
+      <text x="16" y="74" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">pedagogical</text>
+    </g>
+
+    <!-- Gate 2: Performance Outcome (pedagogical, blocks Develop) -->
+    <g transform="translate(0, 142)">
+      <rect width="144" height="112" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="6" height="112" fill="#1e3a5f"/>
+      <text x="16" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#1e3a5f" letter-spacing="0.3">GATE 2</text>
+      <text x="16" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Performance</text>
+      <text x="16" y="56" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Outcome</text>
+      <text x="16" y="74" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">pedagogical</text>
+      <!-- BLOCKS DEVELOP indicator -->
+      <rect x="14" y="82" width="118" height="22" rx="3" fill="#8a3b1e"/>
+      <text x="73" y="96" font-family="-apple-system, Inter, sans-serif" font-size="9" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.6">⚠ BLOCKS DEVELOP</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 2 — DESIGN -->
+  <g transform="translate(168, 16)">
+    <rect width="144" height="32" rx="4" fill="#1e3a5f"/>
+    <text x="72" y="22" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.8">DESIGN</text>
+
+    <!-- Gate 3: Pedagogical Strategy (pedagogical) -->
+    <g transform="translate(0, 48)">
+      <rect width="144" height="82" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="6" height="82" fill="#1e3a5f"/>
+      <text x="16" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#1e3a5f" letter-spacing="0.3">GATE 3</text>
+      <text x="16" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Pedagogical</text>
+      <text x="16" y="56" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Strategy</text>
+      <text x="16" y="74" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">pedagogical</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 3 — DEVELOP -->
+  <g transform="translate(328, 16)">
+    <rect width="144" height="32" rx="4" fill="#1e3a5f"/>
+    <text x="72" y="22" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.8">DEVELOP</text>
+
+    <!-- Gate 4: Source Truth (production) -->
+    <g transform="translate(0, 48)">
+      <rect width="144" height="70" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="3" height="70" fill="#946614"/>
+      <text x="14" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#946614" letter-spacing="0.3">GATE 4</text>
+      <text x="14" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Source Truth</text>
+      <text x="14" y="60" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">production</text>
+    </g>
+
+    <!-- Gate 5: Equity & Accessibility (production) -->
+    <g transform="translate(0, 130)">
+      <rect width="144" height="70" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="3" height="70" fill="#946614"/>
+      <text x="14" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#946614" letter-spacing="0.3">GATE 5</text>
+      <text x="14" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Equity &amp; A11y</text>
+      <text x="14" y="60" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">production</text>
+    </g>
+
+    <!-- Gate 6: Assessment Validity (production) -->
+    <g transform="translate(0, 212)">
+      <rect width="144" height="70" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="3" height="70" fill="#946614"/>
+      <text x="14" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#946614" letter-spacing="0.3">GATE 6</text>
+      <text x="14" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Assessment</text>
+      <text x="14" y="56" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Validity</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 4 — IMPLEMENT -->
+  <g transform="translate(488, 16)">
+    <rect width="144" height="32" rx="4" fill="#1e3a5f"/>
+    <text x="72" y="22" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.8">IMPLEMENT</text>
+
+    <!-- Gate 7: Release (production) -->
+    <g transform="translate(0, 48)">
+      <rect width="144" height="70" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="3" height="70" fill="#946614"/>
+      <text x="14" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#946614" letter-spacing="0.3">GATE 7</text>
+      <text x="14" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Release</text>
+      <text x="14" y="60" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">production</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 5 — EVALUATE -->
+  <g transform="translate(648, 16)">
+    <rect width="144" height="32" rx="4" fill="#1e3a5f"/>
+    <text x="72" y="22" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.8">EVALUATE</text>
+
+    <!-- Gate 8: Performance-Effect (pedagogical) -->
+    <g transform="translate(0, 48)">
+      <rect width="144" height="82" rx="3" fill="#fdfcf6" stroke="#d8d2bf" stroke-width="0.6"/>
+      <rect width="6" height="82" fill="#1e3a5f"/>
+      <text x="16" y="20" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#1e3a5f" letter-spacing="0.3">GATE 8</text>
+      <text x="16" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Performance-</text>
+      <text x="16" y="56" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Effect</text>
+      <text x="16" y="74" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">pedagogical</text>
+    </g>
+  </g>
+
+  <!-- ============== LEGEND ============== -->
+  <g transform="translate(40, 400)">
+    <!-- Pedagogical key -->
+    <rect width="10" height="22" fill="#1e3a5f"/>
+    <text x="22" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#1e3a5f">Pedagogical gates</text>
+    <text x="22" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">humans-only at every maturity level — the anti-replacement claim</text>
+
+    <!-- Production key -->
+    <rect x="350" width="5" height="22" fill="#946614"/>
+    <text x="365" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#946614">Production gates</text>
+    <text x="365" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">agent-prepared, human-signed; sampleable at higher maturity</text>
+  </g>
+
+  <g transform="translate(40, 448)">
+    <!-- Blocks Develop key -->
+    <rect width="32" height="22" rx="3" fill="#8a3b1e"/>
+    <text x="16" y="15" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#faf8f1" text-anchor="middle">⚠</text>
+    <text x="44" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#8a3b1e">Gate 2 blocks Develop</text>
+    <text x="44" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">until the eval rubric is signed (Evaluation-as-Spec discipline)</text>
+  </g>
+</svg>
