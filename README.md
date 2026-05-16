@@ -51,9 +51,15 @@ See [`CHANGELOG.md`](CHANGELOG.md). v1.2 is the public/citable anchor; earlier i
 
 ## License
 
-Copyright © 2026 Ruchir Bakshi. All rights reserved. See [`LICENSE`](LICENSE).
+**Proprietary — all rights reserved.** Copyright © 2026 Ruchir Bakshi. See [`LICENSE`](LICENSE) for the full terms.
 
-For attribution-with-reuse questions (citation in academic work, classroom use, etc.), contact the author. Standard academic citation under fair use is welcomed without prior permission.
+This is not an open-source or Creative Commons work. The presence of this Work in a public repository confers no license beyond reading, citation, and brief fair-use quotation.
+
+**Permitted without prior permission:** reading; standard academic citation; brief verbatim quotation (≤200 words aggregate per citing document) for review, commentary, or scholarship.
+
+**Prohibited without prior written permission:** reproduction or redistribution in any form; commercial use of any kind by any party other than the author; derivative works including translations, summaries, or adaptations; use as training, fine-tuning, RAG, or evaluation data for AI/ML systems; use of the *AAFL* / *Agent-Augmented Framework for Learning* name or framework in competing products; removal or alteration of attribution.
+
+For permission requests (commercial licensing, classroom adoption beyond fair use, translation, derivatives): **hello@rbakshi.com**.
 
 ## Related
 

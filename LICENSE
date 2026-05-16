@@ -1,16 +1,138 @@
+AAFL WHITEPAPER — PROPRIETARY LICENSE
+
 Copyright © 2026 Ruchir Bakshi. All rights reserved.
 
-The AAFL whitepaper, including its text, figures, build pipeline, and accompanying
-materials in this repository, is independent intellectual property authored by
-Ruchir Bakshi.
+The AAFL whitepaper, the "Agent-Augmented Framework for Learning" name, the
+framework's architecture and terminology, the figures, the build pipeline, the
+bibliography, and every other file in this repository (collectively, the "Work")
+are the independent intellectual property of Ruchir Bakshi (the "Author").
 
-Standard academic citation under fair use — including quotation for review,
-commentary, scholarship, and teaching — is permitted without prior permission,
-subject to attribution using the citation form in CITATION.cff or the form
-specified in README.md.
+This is a proprietary license. The Work is not open source. The Work is not
+Creative Commons. The presence of the Work in a public repository confers no
+license, no waiver, and no permission of any kind beyond what is expressly
+granted below.
 
-Reproduction, redistribution, derivative works, translation, or commercial use
-of the whitepaper or its figures, in whole or in part, requires the prior
-written permission of the author.
+================================================================================
+1. EXPRESSLY PERMITTED USES
+================================================================================
 
-For permission requests, contact: hello@rbakshi.com
+The following uses are permitted without prior written permission from the
+Author, provided that attribution is given in the form specified in CITATION.cff
+or README.md:
+
+  (a) Reading the Work, in any format, for personal or scholarly purposes.
+
+  (b) Citation of the Work in academic publications, conference papers, theses,
+      preprints, book chapters, reviews, and similar scholarly outputs, using
+      standard academic citation forms.
+
+  (c) Brief verbatim quotation of the Work — not exceeding 200 words in
+      aggregate from a single citing document — for the purposes of review,
+      commentary, criticism, or scholarship, where such quotation constitutes
+      fair use under 17 U.S.C. § 107.
+
+  (d) Linking to this repository or to the canonical URL of the Work.
+
+================================================================================
+2. EXPRESSLY PROHIBITED USES
+================================================================================
+
+Without prior written permission from the Author, you may NOT:
+
+  (a) Reproduce, copy, mirror, host, redistribute, or republish the Work, in
+      whole or in part, in any medium or format, including but not limited to
+      paper, electronic, web, slide deck, podcast transcript, video, or any
+      future medium.
+
+  (b) Use the Work, in whole or in part, for any commercial purpose. Commercial
+      purpose includes but is not limited to: incorporation into paid training
+      programs, paid courses, paid consulting deliverables, commercial books,
+      commercial whitepapers, commercial blog posts, sponsored content, vendor
+      marketing materials, proposals to clients or employers, billable work
+      product, or any use that is part of, or in support of, revenue-generating
+      activity by any party other than the Author.
+
+  (c) Create derivative works based on the Work, including but not limited to:
+      translations, abridgements, summaries that substitute for reading the
+      Work, adaptations into other media, remixes, mashups, or works that
+      incorporate substantial structure, terminology, or distinctive concepts
+      from the Work.
+
+  (d) Use the Work — in whole or in part, including its text, figures, tables,
+      bibliography, or structured data — as training data, fine-tuning data,
+      retrieval-augmented generation corpora, embedding corpora, evaluation
+      data, or input of any kind to artificial intelligence systems, machine
+      learning systems, large language models, or any automated content
+      generation system, whether for commercial, research, or personal use.
+
+  (e) Use the Work in the development, training, evaluation, or marketing of
+      any product, service, or framework that competes with, substitutes for,
+      or is presented as equivalent to AAFL.
+
+  (f) Remove, alter, obscure, or falsify any copyright notice, authorship
+      attribution, citation metadata, license text, or version identifier in
+      the Work.
+
+  (g) Use the name "AAFL," "Agent-Augmented Framework for Learning," or any
+      confusingly similar mark in connection with any product, service, course,
+      consulting offering, publication, or framework not authored or
+      authorized by the Author.
+
+  (h) Sublicense, sell, lease, rent, or otherwise transfer any right in the
+      Work to any third party.
+
+================================================================================
+3. AUTHOR'S RESERVED RIGHTS
+================================================================================
+
+The Author reserves all rights not expressly granted in Section 1, including
+without limitation the exclusive right to use the Work for any commercial
+purpose, to create derivative works, to license the Work to others on any
+terms, and to enforce this license.
+
+================================================================================
+4. PERMISSION REQUESTS
+================================================================================
+
+Any use not expressly permitted in Section 1 requires the prior written
+permission of the Author. Permission requests, including requests for
+commercial licensing, classroom adoption beyond fair use, translation rights,
+or derivative-work permissions, may be sent to:
+
+  Ruchir Bakshi
+  hello@rbakshi.com
+
+The Author is under no obligation to grant any permission.
+
+================================================================================
+5. NO WARRANTY
+================================================================================
+
+THE WORK IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE
+FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
+
+================================================================================
+6. GOVERNING LAW
+================================================================================
+
+This license is governed by the laws of the United States and the State of
+Virginia, without regard to conflict-of-laws principles. Any dispute arising
+under this license shall be resolved in the state or federal courts located in
+Virginia, and the parties consent to the exclusive jurisdiction of such courts.
+
+================================================================================
+7. ENFORCEMENT AND TERMINATION
+================================================================================
+
+Any breach of this license terminates the violator's rights under Section 1
+automatically and without notice. The Author may seek any and all remedies
+available at law or in equity, including injunctive relief, damages, and
+recovery of attorneys' fees and costs.
+
+================================================================================
+
+For permission requests: hello@rbakshi.com
+For citation form: see CITATION.cff and README.md
