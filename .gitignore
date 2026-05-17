@@ -19,3 +19,6 @@ venv/
 
 # Local intermediates
 /whitepaper/aafl-whitepaper-v1.2-verification.html
+
+# Office app lock files
+~$*
