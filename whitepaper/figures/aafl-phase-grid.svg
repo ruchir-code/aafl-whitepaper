@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="grid-title grid-desc" font-family="Charter, Georgia, 'Times New Roman', serif">
   <title id="grid-title">The eight AAFL HITL decision gates mapped to ADDIE phases</title>
-  <desc id="grid-desc">The eight AAFL HITL decision gates mapped to ADDIE phases. Gate 1 (Learner Reality, pedagogical) and Gate 2 (Performance Outcome, pedagogical, blocks Develop) sit in the Analyze phase. Gate 3 (Pedagogical Strategy, pedagogical) sits in the Design phase. Gates 4 (Source Truth), 5 (Equity and Accessibility), and 6 (Assessment Validity) — all production gates — cluster in the Develop phase. Gate 7 (Release, production) sits in the Implement phase. Gate 8 (Performance-Effect, pedagogical) sits in the Evaluate phase. The four pedagogical gates 1, 2, 3, and 8 bookend the framework and remain humans-only at every maturity level. The four production gates 4, 5, 6, and 7 cluster in Develop and Implement and are agent-prepared and human-signed, becoming sampleable at higher maturity. Gate 2 is marked as the framework's structural blocker: until the eval rubric is signed at Gate 2, the Develop phase cannot run.</desc>
+  <desc id="grid-desc">The eight AAFL HITL decision gates mapped to ADDIE phases. Gate 1 (Learner Reality, pedagogical) and Gate 2 (Performance Outcome, pedagogical, blocks Design and Develop) sit in the Analyze phase. Gate 3 (Pedagogical Strategy, pedagogical) sits in the Design phase. Gates 4 (Source Truth), 5 (Equity and Accessibility), and 6 (Assessment Validity) — all production gates — cluster in the Develop phase. Gate 7 (Release, production) sits in the Implement phase. Gate 8 (Performance-Effect, pedagogical) sits in the Evaluate phase. The four pedagogical gates 1, 2, 3, and 8 bookend the framework and remain humans-only at every PRS level. The four production gates 4, 5, 6, and 7 cluster in Develop and Implement and are agent-prepared and human-signed, becoming sampleable at higher PRS levels. Gate 2 is marked as the framework's structural blocker: until the eval rubric is signed at Gate 2, neither the Design nor the Develop phase can run.</desc>
 
   <!-- Parchment background -->
   <rect width="800" height="500" fill="#faf8f1"/>
@@ -31,9 +31,10 @@
       <text x="16" y="40" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Performance</text>
       <text x="16" y="56" font-family="Charter, Georgia, serif" font-size="13" font-weight="600" fill="#14181f">Outcome</text>
       <text x="16" y="74" font-family="-apple-system, Inter, sans-serif" font-size="9" font-style="italic" fill="#5a6270">pedagogical</text>
-      <!-- BLOCKS DEVELOP indicator -->
-      <rect x="14" y="82" width="118" height="22" rx="3" fill="#8a3b1e"/>
-      <text x="73" y="96" font-family="-apple-system, Inter, sans-serif" font-size="9" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.6">⚠ BLOCKS DEVELOP</text>
+      <!-- BLOCKS DESIGN + DEVELOP indicator -->
+      <rect x="10" y="78" width="124" height="28" rx="3" fill="#8a3b1e"/>
+      <text x="72" y="90" font-family="-apple-system, Inter, sans-serif" font-size="8.5" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.5">⚠ BLOCKS</text>
+      <text x="72" y="102" font-family="-apple-system, Inter, sans-serif" font-size="8.5" font-weight="700" fill="#faf8f1" text-anchor="middle" letter-spacing="0.5">DESIGN + DEVELOP</text>
     </g>
   </g>
 
@@ -122,19 +123,19 @@
     <!-- Pedagogical key -->
     <rect width="10" height="22" fill="#1e3a5f"/>
     <text x="22" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#1e3a5f">Pedagogical gates</text>
-    <text x="22" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">humans-only at every maturity level — the anti-replacement claim</text>
+    <text x="22" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">humans-only at every PRS level — the anti-replacement claim</text>
 
     <!-- Production key -->
     <rect x="350" width="5" height="22" fill="#946614"/>
     <text x="365" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#946614">Production gates</text>
-    <text x="365" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">agent-prepared, human-signed; sampleable at higher maturity</text>
+    <text x="365" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">agent-prepared, human-signed; sampleable at higher PRS levels</text>
   </g>
 
   <g transform="translate(40, 448)">
-    <!-- Blocks Develop key -->
+    <!-- Blocks Design + Develop key -->
     <rect width="32" height="22" rx="3" fill="#8a3b1e"/>
     <text x="16" y="15" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#faf8f1" text-anchor="middle">⚠</text>
-    <text x="44" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#8a3b1e">Gate 2 blocks Develop</text>
+    <text x="44" y="14" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#8a3b1e">Gate 2 blocks Design + Develop</text>
     <text x="44" y="30" font-family="Charter, Georgia, serif" font-size="10" fill="#5a6270">until the eval rubric is signed (Evaluation-as-Spec discipline)</text>
   </g>
 </svg>

@@ -34,39 +34,41 @@ Instructional design has spent fifty years answering the question *"how do we bu
 
 The agent era forces a third reframing. As AI agents become competent first-draft authors — capable of producing learner personas, learning objectives, storyboards, item banks, and accessibility-checked content at the level of a mid-career instructional designer — the human ID practitioner's center of gravity shifts from *production* to *judgment*. The skill that compounds is no longer *generating instructional artifacts*; it is *deciding which of three agent-generated drafts is pedagogically defensible, why, and what the agent missed about the learner.*
 
-**This whitepaper introduces AAFL — the Agent-Augmented Framework for Learning** — an opinionated framework that operates inside this shift. AAFL preserves ADDIE's five-phase spine (because federal contracting officers, ACE evaluators, and Quality Matters reviewers still read in that vocabulary), adds three cross-cutting layers (orchestration, evaluation-as-spec, governance) that did not exist in classic ADDIE, introduces an inner *Translator's Loop* every artifact runs through, and is anchored in **workplace performance** as the organizing outcome.
+**This whitepaper introduces AAFL — the Agent-Augmented Framework for Learning** — a framework for the era of agent-authored first drafts and human-held accountability. AAFL preserves ADDIE's five-phase spine (because federal contracting officers, ACE evaluators, and Quality Matters reviewers still read in that vocabulary), adds three cross-cutting layers (orchestration, evaluation-as-spec, governance) that did not exist in classic ADDIE, introduces an inner *Translator's Loop* every artifact runs through, and is anchored in **workplace performance** — not course completion or learning attainment — as the organizing outcome.
 
 AAFL formalizes five intellectual positions that no published competitor currently integrates:
 
 1. **An HITL decision-gate taxonomy** — eight named gates with explicit pedagogical-vs-production classification
 2. **A pedagogical vs production task taxonomy** — agents do what is bounded and reviewable; humans hold what is value-loaded and trust-bearing
-3. **The Proportional Restraint Scale (PRS) with prescribed caps** — most federal/accredited programs sit at PRS-2 / PRS-3; PRS-4 is *inappropriate* for credentialing, classified, and high-consequence training
+3. **The Proportional Restraint Scale (PRS)** — a four-level scale (PRS-1 Sandbox · PRS-2 Co-designer · PRS-3 Production Partner · PRS-4 Performance System) with prescribed ceilings for each consequence space; most federal and accredited programs sit at PRS-2 or PRS-3 (see §6)
 4. **A performance-anchored eval framework** — six dimensions with workplace performance attainment as the primary spine; eval rubric authored at the Performance Outcome Gate before any agent runs
-5. **A governance/escalation layer** — institutional infrastructure including classification-based maturity caps that no civilian framework currently specifies
+5. **A governance/escalation layer** — the institutional infrastructure (audit trail, classification handling, accreditation alignment, escalation paths) that operationalizes the PRS ceilings; the federal-applicability claim no civilian framework currently makes
 
-The framework is opinionated about its own limits. It publishes what it *won't* do — no PRS-4 on classified content authoring, no PRS-4 on credentialing programs, no agent autonomy on pedagogical gates regardless of model capability — before publishing what it does. That posture is the source of its credibility, not its limitation.
+The framework is opinionated about its own limits. It publishes what it *won't* do — concrete caps on agent autonomy tied to data classification, training-program type, and decision class — before publishing what it does. That posture is the source of its credibility, not its limitation.
 
-This whitepaper is structured to be read in two ways. **As a sequential argument**, it moves from the conceptual shift (§1), through the architecture (§2–§3), the gate taxonomy (§4), the agent-task split (§5), the maturity model (§6), the eval framework (§7), the cross-cutting layers (§8), engagement with prior frameworks (§9), federal applicability (§10), and risks (§11). **As a reference manual**, each section is self-contained — practitioners can use the gate taxonomy or the eval framework à la carte without adopting the whole framework.
+This whitepaper is structured to be read in two ways. **As a sequential argument**, it moves from the conceptual realignment (§1), through the architecture (§2–§3), the gate taxonomy (§4), the agent-task split (§5), the Proportional Restraint Scale (§6), the eval framework (§7), the cross-cutting layers (§8), engagement with prior frameworks (§9), federal applicability (§10), and risks (§11). **As a reference manual**, each section is self-contained — practitioners can use the gate taxonomy or the eval framework à la carte without adopting the whole framework.
 
 ---
 
 ## Table of Contents
 
-1. The Conceptual Shift
-   - §1.5  Method — How This Framework Was Developed
-2. Architecture — The Hybrid Stack
-3. The Translator's Loop
-4. The HITL Decision-Gate Taxonomy
-5. The Agent-Task Taxonomy
-6. The Proportional Restraint Scale (PRS)
-7. The Eval Framework
-8. The Three Cross-Cutting Layers
-9. Engagement With Prior Frameworks and Intellectual Lineage
-10. Federal Applicability
-11. Risks and Pitfalls
-12. Limitations and Future Work
-13. Frequently Asked Questions
-14. Bibliography
+*Throughout this paper, the symbol "§" (the section sign, also called the silcrow) is used as a shorthand for "section." A reference to "§4" means "see Section 4." This is the standard convention in legal and scholarly writing for cross-referencing numbered sections within a document.*
+
+- **§1.**  The Conceptual Shift
+  - **§1.5**  Method — How This Framework Was Developed
+- **§2.**  Architecture — The Hybrid Stack
+- **§3.**  The Translator's Loop
+- **§4.**  The HITL Decision-Gate Taxonomy
+- **§5.**  The Agent-Task Taxonomy
+- **§6.**  The Proportional Restraint Scale (PRS)
+- **§7.**  The Eval Framework
+- **§8.**  The Three Cross-Cutting Layers
+- **§9.**  Engagement With Prior Frameworks and Intellectual Lineage
+- **§10.**  Federal Applicability
+- **§11.**  Risks and Pitfalls
+- **§12.**  Limitations and Future Work
+- **§13.**  Frequently Asked Questions
+- **§14.**  Bibliography
 
 Appendices: A. Acronym Glossary · B. Comparison of Published AI-Era ID Frameworks
 
@@ -76,7 +78,9 @@ Appendices: A. Acronym Glossary · B. Comparison of Published AI-Era ID Framewor
 
 Florida State University's 1975 *Interservice Procedures for Instructional Systems Development* — the genealogy of what became ADDIE — assumed a clear sequence of human authorship. The instructional designer analyzed learner needs, designed learning objectives, developed content, implemented delivery, and evaluated results. Each phase had a human author. Tools were accelerants — they did not change the locus of authorship.
 
-The agent era inverts authorship without inverting accountability. A competent AI agent, prompted appropriately and given access to source material, can now produce:
+The agent era reverses who writes the first draft without reversing who is accountable for it. Agents now produce drafts that human practitioners used to author by hand; institutional, legal, and pedagogical accountability for the work still rests with the practitioner. We call this *authorship inversion without accountability inversion* — the *who-writes* role flips; the *who-owns-it* role does not.
+
+A competent AI agent, given clear instructions, well-formed inputs, and access to source material, can now produce:
 
 - A learner persona drafted from interview transcripts in minutes
 - A set of objectives at multiple cognitive levels
@@ -89,31 +93,33 @@ The agent era inverts authorship without inverting accountability. A competent A
 
 This is not aspirational; it is operational. Across commercial authoring platforms in 2024–2026, design-loop AI tooling has moved from optional add-on to default surface — course-outline generation, narrated-video production at scale, animated scenario-based training, and accessibility-checked content drafting are now common features of mainstream instructional design platforms. On the federal side, in the author's federal ID practice, AI-Enhanced ADDIE workflows applied across ACE-accredited graduate certificate and post-baccalaureate programs have produced first-draft cycle reductions in the 40–60% range. These are practitioner-level observations across multiple production deliveries, not controlled-study results; see §12 (Limitations and Future Work). The capability claim is not in dispute.
 
-What *is* in dispute — and what AAFL claims to resolve — is the question of where the human stays, why, and what authority the human's judgment carries that the agent's output does not. Three positions in the discourse currently dominate:
+What *is* in dispute — and what AAFL claims to resolve — is the question of where the human stays, why, and what authority the human's judgment carries that the agent's output does not. Two positions in the discourse currently dominate:
 
 - **The substitution position.** Agents will replace ID practitioners. Most extreme cases: per-learner curriculum generated end-to-end without human review.
-- **The augmentation position.** Agents accelerate ID work without displacing it. Humans review every output.
-- **The translator position.** Agents produce confident first drafts; humans translate between agent capability and instructional soundness, holding judgment at specific decision points. *AAFL operationalizes this position.*
+- **The augmentation position.** Agents accelerate ID work without displacing it. Humans review agent output and make the value-laden decisions.
 
-The translator position holds that the *authorship inversion* is real — agents write first, humans validate — but that the *accountability inversion* must not be. The learner does not care who wrote the artifact. The learner cares whether the artifact moves their performance. The institution does not care who drafted the assessment. The institution cares whether the assessment validly measures the construct claimed and whether it stands up in audit. Agents do not (yet) bear professional, legal, or institutional accountability for these claims; humans do. AAFL formalizes the gates where human accountability is irreducible regardless of agent capability.
+AAFL takes the augmentation position. But "augmentation" is broad — *how* the human relates to the agent's output is what separates augmentation that works from augmentation that drifts into rubber-stamp review. AAFL calls this practitioner posture the **translator stance**: agents produce confident first drafts; humans translate between agent capability and instructional soundness, judging at specific decision points, gating release, and holding the accountability the agent cannot. The translator stance is not a third position on the spectrum; it is the discipline that operationalizes the augmentation position. Substitution requires no stance — there is no human to take one. Augmentation without the translator stance collapses into review-theater.
 
-But the conceptual shift goes deeper than authorship. The *purpose* of doing ID has shifted, too — or, more accurately, the agent era exposes a shift that was already underway in the most performance-oriented corners of L&D.
+The translator stance holds that the *authorship inversion* is real — agents write first, humans validate — but that the *accountability inversion* must not be. The learner does not care who wrote the artifact. The learner cares whether the artifact improves their performance. The institution does not care who drafted the assessment. The institution cares whether the assessment validly measures the construct claimed and whether it stands up in audit. Agents do not (yet) bear professional, legal, or institutional accountability for these claims; humans do. AAFL formalizes the gates where human accountability is irreducible regardless of agent capability.
 
-ADDIE was built around *learning attainment*: phases optimize for producing a course that learners pass. The performance-oriented tradition reframes the L&D outcome question as *workplace performance*. Did time-to-competency drop? Did error rate decrease? Did throughput rise? Did the skill transfer to the job? An intervention that does not move performance is a learning experience, not a performance-acceleration intervention. This is Kirkpatrick L3/L4 territory, not L1.
+But the conceptual realignment goes deeper than authorship. The *purpose* of doing ID is changing, too — or, more accurately, the agent era exposes a change that was already underway in the most performance-oriented corners of L&D, and provides the eval tooling to finally complete it.
 
-The agent era makes the distinction urgent. An agent will optimize whatever you tell it to optimize. If the eval rubric measures course completion and quiz scores, the agent will produce courses that maximize completion and quiz scores — and may be entirely uncorrelated with workplace performance. If the eval rubric measures time-to-competency and transfer-to-job, the agent's output orients toward those outcomes. The choice of organizing outcome is no longer abstract; it is the spec the agent fulfills.
+ADDIE was built around *learning attainment*: phases optimize for producing a course that learners pass. That framing was not a failure of imagination on the part of its architects. The performance-oriented tradition recognized the gap from the beginning — Thomas Gilbert, Robert Mager, Geary Rummler and Alan Brache, and the broader Human Performance Technology field that grew up around their work argued that workplace performance, not course completion, was the legitimate outcome of L&D investment. The constraint was *tooling*. Pre/post tests, knowledge checks, retention assessments, multiple-choice quizzes — these were what could practically be measured at scale through the 1980s, 1990s, and 2000s. The eval tools of those decades let practitioners ask *did the learner absorb the content*, but not *did the absorption change what they do at work tomorrow*.
 
-AAFL therefore takes the opinionated stance: **workplace performance is the framework's organizing outcome, not learning attainment.** Every gate, every eval dimension, every maturity level ties back to performance.
+The agent era removes that constraint. AI agents, paired with augmented-reality overlays, instrumentation in the work environment, and per-learner telemetry, now make *while-you-work* evaluation practical at scale: did this technician fix the machine faster? Did this analyst flag the right indicator under load? Did the credentialed officer execute the correct procedure during the incident? The measurement keeps up with the outcome question for the first time. What learning scientists could only argue for in the abstract becomes operationally available.
 
-This opinionation is not without precedent. The framework's intellectual footing rests in the broader Human Performance Technology tradition — the body of work that, since the 1960s, has insisted on workplace performance rather than course completion as the legitimate outcome of L&D investment. AAFL does not paraphrase that tradition; it inherits it. The substantive engagement with named voices is consolidated in §9.
+That is why the choice of organizing outcome is no longer abstract; it is the spec the agent fulfills. An agent will optimize whatever you tell it to optimize. If the eval rubric measures course completion and quiz scores, the agent will produce courses that maximize completion and quiz scores — and the result may be entirely uncorrelated with workplace performance. If the eval rubric measures time-to-competency and transfer-to-job, the agent's output orients toward those outcomes instead.
 
-The shift, in summary, is from:
+AAFL therefore takes the opinionated stance: **workplace performance is the framework's organizing outcome, not learning attainment.** Every gate, every eval dimension, every PRS level ties back to performance. ADDIE's five-phase spine survives — practitioners still Analyze, Design, Develop, Implement, and Evaluate — but the organizing question those phases answer changes from *did the learner pass* to *did workplace performance change*. AAFL is continuity-with-evolution: it inherits ADDIE's process, refits it for agent-era eval tools, and anchors it where the HPT tradition always argued the outcome belonged. The substantive engagement with named voices is consolidated in §9.
 
-- *Designer as maker* → *designer as the conscience of the system that makes*
+The realignment, in summary, is from:
+
+- *Designer as maker* → *designer as judge, gate-keeper, and accountability holder for the system that makes*
 - *Course completion as the win* → *workplace performance as the win*
 - *AI as accelerant for human authorship* → *AI as first-draft author within human-defined judgment gates*
+- *Eval tooling as the limit on what could be measured* → *eval tooling as the spec the agent fulfills*
 
-What follows is the architecture that operates inside this shift.
+What follows is the architecture that operates inside this realignment.
 
 ---
 
@@ -123,17 +129,17 @@ A framework paper that proposes a new operating model for a field's practice owe
 
 ### Inputs to the synthesis
 
-**Literature scan (2025–2026).** A bounded review of three intersecting bodies of work: (i) the human performance technology (HPT) tradition (Gilbert, 1978; Rummler & Brache, 1990; Moore, 2017; Mosher & Gottfredson, 2011; Brinkerhoff, 2003; Kirkpatrick & Kirkpatrick, 2016) for the *workplace performance as organizing outcome* commitment; (ii) the contemporary AI-in-ID literature (Chai et al., 2025; Hardman, 2025; EduPlanner, 2025; AUSS, 2025) and the practitioner-competency literature surrounding it (Dakan & Feller, 2023–2025) for the agent-era state of the art; and (iii) methodological adjacencies — eval-driven agent engineering practice (Anthropic Engineering, 2025), human-algorithm centaur models (Saghafian et al., 2024), and empirical work on uneven AI capability across tasks (Brynjolfsson et al., 2023; Dell'Acqua et al., 2023). The positioning records, white-space analysis, named-voice engagement map, and full annotated reading list are versioned alongside this whitepaper in a public project repository (see §1.5 Reproducibility below).
+**Literature scan (2025–2026).** A bounded review of three intersecting bodies of work: (i) the human performance technology (HPT) tradition (Gilbert, 1978; Rummler & Brache, 1990; Moore, 2017; Mosher & Gottfredson, 2011; Brinkerhoff, 2003; Kirkpatrick & Kirkpatrick, 2016) for the *workplace performance as organizing outcome* commitment; (ii) the contemporary AI-in-ID literature (Chai et al., 2025; Hardman, 2025; EduPlanner, 2025; AUSS, 2025) and the practitioner-competency literature surrounding it (Dakan & Feller, 2023–2025, anchored in the *AI Fluency for Educators* and *AI Fluency: Framework & Foundations* courses published by Anthropic Academy) for the agent-era state of the art; and (iii) methodological adjacencies — eval-driven agent engineering practice (Anthropic Engineering, 2025), human-algorithm centaur models (Saghafian et al., 2024), and empirical work on uneven AI capability across tasks (Brynjolfsson et al., 2023; Dell'Acqua et al., 2023). The positioning records, white-space analysis, named-voice engagement map, and full annotated reading list are versioned alongside this whitepaper in a public project repository (see §1.5 Reproducibility below).
 
-**Practitioner experience.** The author has applied AI-Enhanced ADDIE workflows across ACE-accredited graduate certificate and post-baccalaureate programs in federal security education. That practice produced the operational observations on first-draft cycle compression reported in §1 and the practitioner-level PRS-1 / PRS-2 productivity bands reported in §6. These are practitioner-level observations across multiple production deliveries — they are not the outputs of a controlled study, and the framework treats them as such (see §12, Limitations and Future Work).
+**Practitioner experience.** The author has applied AI-Enhanced ADDIE workflows across ACE-accredited graduate certificate and post-baccalaureate programs in federal security education. Adjacent practice that informed the framework's design choices, particularly around the human-in-the-loop discipline and the eval-as-spec stance, includes extensive AI-assisted software-engineering work; advocacy-research and policy-paper authorship for an unnamed civil-society organization, where AI-drafted materials had to clear external-audience credibility bars; and a sustained curriculum-design body of work for an unnamed performing-arts credentialing program operating internationally, where the agent-era split between source-truth fidelity and pedagogical strategy first surfaced as a recurring design problem. The federal practice produced the operational observations on first-draft cycle compression reported in §1 and the practitioner-level PRS-1 / PRS-2 productivity bands reported in §6. These are practitioner-level observations across multiple production deliveries — they are not the outputs of a controlled study, and the framework treats them as such (see §12, Limitations and Future Work).
 
 ### Synthesis method
 
-The framework's distinctive moves — the eight HITL gates, the pedagogical-vs-production split, the Proportional Restraint Scale with classification caps, the eval-as-spec discipline, and the three cross-cutting layers — were arrived at by iterating between the literature scan and the practitioner experience until a coherent operating model emerged that (a) preserved the workplace-performance commitment of the HPT tradition, (b) absorbed the eval-driven and centaur-model methodological adjacencies, (c) extended the named published AI-in-ID frameworks rather than competing with them, and (d) addressed the federal-applicability white space that no civilian framework currently occupies. The integration is the contribution; no individual element is novel in isolation.
+The framework's distinctive choices — the eight HITL gates, the pedagogical-vs-production split, the Proportional Restraint Scale with classification caps, the eval-as-spec discipline, and the three cross-cutting layers — emerged from this synthesis under four design criteria: (a) preserve the workplace-performance commitment of the HPT tradition, (b) absorb the eval-driven and centaur-model methodological adjacencies, (c) extend the named published AI-in-ID frameworks rather than competing with them, and (d) address the federal-applicability white space that no civilian framework currently occupies. The integration is the contribution; no individual element is novel in isolation.
 
 ### What this method is *not*
 
-AAFL has not been developed via Delphi consensus with an external expert panel; it has not been validated by independent field tests at PRS-3+ maturity; it does not draw on federally-funded user research; and it does not yet rest on published case studies that any reader can audit. These are deliberate scope boundaries for v1.2 — the framework is offered to the field as a *spec inviting field validation*, not as a validated framework. The §12 Limitations and Future Work section names this explicitly. Field tests, external review panels, and comparative practitioner studies are the natural next steps; the framework's structure tolerates row-level updates without changing its architecture (see §11, Risk 4, and §5 "When the line moves").
+AAFL has not been developed via external expert-panel consensus methods such as the Delphi technique (the iterative-expert-feedback methodology common in education-research framework development); it has not been validated by independent field tests at PRS-3+; it does not draw on federally-funded user research; and it does not yet rest on published case studies that any reader can audit. These are deliberate scope boundaries for this whitepaper — the framework is offered to the field as a *spec inviting field validation*, not as a validated framework. The §12 Limitations and Future Work section names this explicitly. Field tests, external review panels, and comparative practitioner studies are the natural next steps; the framework's structure tolerates row-level updates without changing its architecture (see §11, Risk 4, and §5 "When the line moves").
 
 ### Reproducibility
 
@@ -155,7 +161,7 @@ The decision to keep ADDIE's vocabulary is deliberate. Federal contracting offic
    ║  escalation · classification · audit · accreditation · IP discipline  ║
    ╠═══════════════════════════════════════════════════════════════════════╣
    ║  EVALUATION-AS-SPEC LAYER  ·  quality boundary                        ║
-   ║  performance evals defined BEFORE agents draft; rubric blocks Develop ║
+   ║  performance evals defined BEFORE agents draft; rubric blocks Design + Develop ║
    ╠═══════════════════════════════════════════════════════════════════════╣
    ║  ORCHESTRATION LAYER  ·  routes within both boundaries                ║
    ║  agent routing · HITL gates · model selection · audit log             ║
@@ -187,13 +193,13 @@ The decision to keep ADDIE's vocabulary is deliberate. Federal contracting offic
    └───────────────────────────────────────────────────────────────────────┘
 ```
 
-*Figure 1 — alt-text caption.* AAFL framework architecture. Three horizontal cross-cutting layers stacked top to bottom: the Governance Layer (escalation, classification, audit, accreditation alignment, IP discipline) sets the policy boundary; the Evaluation-as-Spec Layer (performance evals defined before agents draft; rubric blocks Develop) sets the quality boundary; the Orchestration Layer (agent routing, HITL gates, model selection, audit log) routes work within both boundaries. Beneath the three layers, ADDIE's five phases — Analyze, Design, Develop, Implement, Evaluate — run left to right as the framework's vertical spine. Each phase connects to the three layers above via bidirectional arrows: the layers shape the phase's work, and the phase reports back into the layers' audit, eval, and governance state. Attached to the phase row is the Translator's Loop, an inner four-step cycle (Draft → Discern → Validate → Release) that every artifact runs through within every phase. At the bottom sits the framework's anchor: workplace performance, Kirkpatrick L3/L4 — every phase, every gate, every eval ties back to whether the intervention moved time-to-competency, error rate, throughput, or transfer-to-job, not whether the learner passed.
+*Figure 1 — alt-text caption.* AAFL framework architecture. Three horizontal cross-cutting layers stacked top to bottom — Governance, Evaluation-as-Spec, and Orchestration (each layer's specific responsibilities are expanded in the *What's in each cross-cutting layer* subsection below). Beneath the three layers, ADDIE's five phases — Analyze, Design, Develop, Implement, Evaluate — run left to right as the framework's vertical spine. Each phase connects to the three layers above via bidirectional arrows: the layers shape the phase's work, and the phase reports back into the layers' audit, eval, and governance state. Each phase column carries an embedded *DDVR* indicator — four small chiclets reading D-D-V-R — signaling that the four-step Translator's Loop (Draft → Discern → Validate → Release) runs *within* each phase against every agent-produced artifact. A legend below the phase row expands DDVR into its four numbered steps with their human-or-agent role assignments. At the bottom sits the framework's anchor: workplace performance, Kirkpatrick L3/L4 — every phase, every gate, every eval ties back to whether the intervention moved time-to-competency, error rate, throughput, or transfer-to-job, not whether the learner passed.
 
 ### Why hybrid (not pure overlay, not pure replacement)
 
-Three architectural moves were considered:
+Three architectural choices were considered:
 
-- **(a) Pure overlay** — keep ADDIE phases unchanged, bolt on HITL gates as checklists. This is too conservative. Orchestration, evaluation, and governance now run *continuously* across every phase; they cannot be a Phase 6.
+- **(a) Pure overlay** — keep ADDIE phases unchanged, bolt on HITL gates as checklists. This is too conservative. Orchestration, evaluation, and governance need to run *continuously* across every phase; they cannot be a Phase 6.
 - **(b) Pure replacement** — discard ADDIE phases, introduce new phase names like *Brief → Generate → Discern → Validate → Release → Learn*. Too radical. Forfeits ADDIE Guide lineage, federal vocabulary, and accreditation language. Reduces credibility with the audience most likely to adopt.
 - **(c) Hybrid** — preserve the phase names, add cross-cutting layers and an inner motion. Practitioners keep the map they already use; AAFL adds the new instruments running across it.
 
@@ -201,19 +207,21 @@ AAFL adopts (c). ADDIE Guide remains the *reference* (the dictionary); AAFL is t
 
 ### What's in each cross-cutting layer
 
-**The Orchestration Layer** routes work between agents and humans. It decides which agent runs which task, which model is appropriate for which class of work (frontier vs cost-optimized vs federal-tenant), when artifacts route to which gate, and what gets logged. At Maturity Level 1, orchestration is manual — the human is the orchestrator. At higher levels, orchestration becomes increasingly automated within institution-defined boundaries.
+*The layers are presented here in the same top-to-bottom order they appear in Figure 1: Governance (the outermost policy boundary), then Evaluation-as-Spec (the quality boundary inside it), then Orchestration (the runtime within both).*
 
-**The Evaluation-as-Spec Layer** borrows the eval-driven discipline from agent engineering practice ("define evals before agents fulfill them") and operationalizes it for ID. The eval rubric for a given course is authored at the Performance Outcome Gate (Gate 2) *before* any Develop-phase agent runs. The rubric *blocks* Develop. No rubric, no Develop. This is the framework's single biggest defense against the agent-era failure mode of artifacts that are well-formed but not instructionally sound.
+**The Governance Layer** is the institutional infrastructure. It captures audit trail (chain of custody for every agent-generated artifact, model version recorded, prompt-and-response archived for the contract retention window), classification handling (FedRAMP, NIST 800-171, CUI marking, ITAR/EAR where applicable), accreditation alignment (ACE evaluator expectations, Quality Matters Standards 2/3/8, WCAG 2.1 AA + Section 508), escalation paths (what happens when the human reviewer disagrees with the agent's output, when does human override, when does the disagreement escalate), and **PRS caps by data classification** — the federal-applicability claim no civilian framework currently makes.
 
-**The Governance Layer** is the institutional infrastructure. It captures audit trail (chain of custody for every agent-generated artifact, model version recorded, prompt-and-response archived for the contract retention window), classification handling (FedRAMP, NIST 800-171, CUI marking, ITAR/EAR where applicable), accreditation alignment (ACE evaluator expectations, Quality Matters Standards 2/3/8, WCAG 2.1 AA + Section 508), escalation paths (what happens when the human reviewer disagrees with the agent's output, when does human override, when does the disagreement escalate), and **maturity caps by data classification** — the federal-applicability claim no civilian framework currently makes.
+**The Evaluation-as-Spec Layer** borrows the eval-driven discipline from agent engineering practice ("define evals before agents fulfill them"; Anthropic Engineering, 2025) and operationalizes it for ID. The eval rubric for a given course is authored at the Performance Outcome Gate (Gate 2) *before* any Design-phase or Develop-phase agent runs. The rubric *blocks both Design and Develop*. No rubric, no Design — and certainly no Develop. The reasoning is straightforward: a malformed design is worse than no design, because malformed designs commit reviewers, schedule, and downstream production to the wrong target. This is the framework's single biggest defense against the agent-era failure mode of artifacts that are well-formed but not instructionally sound.
 
-The three layers work together: Governance sets the policy boundary; Evaluation-as-Spec sets the quality boundary; Orchestration routes work within both boundaries.
+**The Orchestration Layer** routes work between agents and humans. It decides which agent runs which task, which model is appropriate for which class of work (frontier vs cost-optimized vs federal-tenant), when artifacts route to which gate, and what gets logged. At PRS-1, orchestration is manual — the human is the orchestrator. At higher PRS levels, orchestration becomes increasingly automated within the boundaries Governance and Evaluation-as-Spec define.
+
+The three layers work together in nested order: Governance sets the policy boundary; Evaluation-as-Spec sets the quality boundary inside it; Orchestration routes work within both.
 
 ---
 
 ## §3. The Translator's Loop
 
-Inside every phase, every artifact runs through a four-step inner cycle:
+Inside every phase, every artifact runs through a four-step inner cycle. The diagram-side mnemonic is **DDVR** — the four chiclets embedded in each ADDIE column of Figure 1:
 
 > **Draft → Discern → Validate → Release**
 
@@ -233,7 +241,7 @@ The Translator's Loop is also the practitioner-facing slogan for AAFL. Where the
 
 ## §4. The HITL Decision-Gate Taxonomy
 
-Eight gates. A memorable count, mapped to ADDIE phases, with each gate classified as either **pedagogical** (humans-only, value-statement decisions) or **production** (agent-prepared, human-signed, sampleable at higher maturity). The split is the framework's load-bearing distinction.
+Eight gates. A memorable count, mapped to ADDIE phases, with each gate classified as either **pedagogical** (humans-only, value-statement decisions) or **production** (agent-prepared, human-signed, sampleable at higher PRS levels). The split is the framework's load-bearing distinction.
 
 ### Gate 1 — Learner Reality (Analyze, pedagogical)
 
@@ -247,15 +255,15 @@ Eight gates. A memorable count, mapped to ADDIE phases, with each gate classifie
 
 ### Gate 2 — Performance Outcome (Analyze → Design boundary, pedagogical)
 
-*Stake.* The terminal definition of mastery — what workplace performance looks like when the intervention has worked.
+*Stake.* The terminal definition of mastery — what workplace performance looks like when the intervention has worked. This is where AAFL departs from legacy *learning objectives*. Traditional learning objectives describe what a learner should know or be able to do at the end of the course; AAFL's performance outcomes describe what the learner should *do differently at work*. The two are not interchangeable. A learner can master every learning objective and still not change a single workplace behavior — which is precisely the gap the pre-agent eval tooling left open (see §1). This gate is where the new eval tooling has the most to offer: *while-you-work* signals make these performance outcomes practically measurable for the first time.
 
 *Agent input.* Candidate objectives at multiple cognitive levels; backward-mapped action lists; performance-context scenarios; assessment criteria.
 
 *Human criterion.* *Are these the performance outcomes that matter, or the outcomes that are easiest to measure? Time-to-competency, error rate, throughput, transfer-to-job — defined and measurable?*
 
-*Failure mode.* Defaulting to learning-attainment proxies (course completion, knowledge-check scores) instead of performance metrics. The agent will optimize whatever you tell it to optimize.
+*Failure mode.* Defaulting to learning-attainment proxies (course completion, knowledge-check scores) instead of performance metrics. These proxies persisted because the eval tools of the pre-agent era could not reliably measure anything else. The agent era removes that excuse — and an agent will optimize whatever you tell it to optimize, including the wrong thing.
 
-*Critical role.* This gate **blocks** the Evaluation-as-Spec Layer. The eval rubric is authored here, *before* any Develop-phase agent runs. No rubric, no Develop.
+*Critical role.* This gate **blocks** the Evaluation-as-Spec Layer for both the Design and Develop phases. The eval rubric is authored here, *before* any Design-phase or Develop-phase agent runs. No rubric, no Design — and no Develop. The framework's working principle is that a malformed design is worse than no design at all: a design committed to the wrong performance outcome will marshal downstream production effort, reviewer attention, and schedule around an incorrect target, and the cost of unwinding that is far higher than the cost of pausing Design until Gate 2 is signed.
 
 ### Gate 3 — Pedagogical Strategy (Design, pedagogical)
 
@@ -275,7 +283,7 @@ Eight gates. A memorable count, mapped to ADDIE phases, with each gate classifie
 
 *Human criterion.* *SME-validated, traceable to source, free of hallucinated authority.*
 
-*Federal note.* Non-negotiable in federal contexts. CUI/classification-marked sources only; classified material does not pass through general-purpose agents (caps at Maturity Level 2).
+*Federal note.* Non-negotiable in federal contexts. CUI/classification-marked sources only; classified material does not pass through general-purpose agents (caps at PRS-2).
 
 ### Gate 5 — Equity & Accessibility (Develop, production)
 
@@ -305,7 +313,7 @@ Eight gates. A memorable count, mapped to ADDIE phases, with each gate classifie
 
 ### Gate 8 — Performance-Effect (Evaluate, pedagogical)
 
-*Stake.* Whether the intervention actually accelerated workplace performance — not just whether the course was completed.
+*Stake.* Whether the intervention actually accelerated workplace performance — not just whether the course was completed. "Accelerated workplace performance" is increasingly operationalized through *while-you-work* signal capture: AR overlays at the moment of task execution that log whether the technician completed the procedure correctly the first time; instrumented work environments that record cycle-time and error rates; per-learner telemetry that surfaces the gap between training-environment competence and on-the-job execution. These signals — unavailable to ADDIE's original architects — are what make Gate 8 operationally answerable today rather than aspirational (see §1, *agent era removes the tooling constraint*).
 
 *Agent input.* Outcome data; analytics; drop-off patterns; pre/post performance metrics; transfer-to-job indicators; error-rate change; time-to-competency analysis; hypothesis on causes.
 
@@ -333,20 +341,20 @@ Eight gates. A memorable count, mapped to ADDIE phases, with each gate classifie
    ┃  no Develop)     ┃  ┃                  ┃  │ (production)     │  │                  │  ┃                  ┃
    ┗━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━┛  └──────────────────┘  └──────────────────┘  ┗━━━━━━━━━━━━━━━━━━┛
 
-   Legend:  ┃━┃  Pedagogical gates  — humans-only at every maturity level (anti-replacement claim)
-            │─│  Production gates   — agent-prepared, human-signed; sampleable at higher maturity
-            ⚠    Gate 2 blocks Develop until the eval rubric is signed (Evaluation-as-Spec discipline)
+   Legend:  ┃━┃  Pedagogical gates  — humans-only at every PRS level (anti-replacement claim)
+            │─│  Production gates   — agent-prepared, human-signed; sampleable at higher PRS levels
+            ⚠    Gate 2 blocks Design AND Develop until the eval rubric is signed (Evaluation-as-Spec discipline)
 ```
 
-*Figure 2 — alt-text caption.* The eight AAFL HITL decision gates mapped to ADDIE phases. Gate 1 (Learner Reality, pedagogical) and Gate 2 (Performance Outcome, pedagogical, blocks Develop) sit in the Analyze phase. Gate 3 (Pedagogical Strategy, pedagogical) sits in the Design phase. Gates 4 (Source Truth), 5 (Equity & Accessibility), and 6 (Assessment Validity) — all production gates — cluster in the Develop phase. Gate 7 (Release, production) sits in the Implement phase. Gate 8 (Performance-Effect, pedagogical) sits in the Evaluate phase. The four pedagogical gates (1, 2, 3, 8) bookend the framework and remain humans-only at every maturity level. The four production gates (4, 5, 6, 7) cluster in Develop and Implement and are agent-prepared and human-signed, becoming sampleable at higher maturity. Gate 2 is marked as the framework's structural blocker: until the eval rubric is signed at Gate 2, the Develop phase cannot run.
+*Figure 2 — alt-text caption.* The eight AAFL HITL decision gates mapped to ADDIE phases. Gate 1 (Learner Reality, pedagogical) and Gate 2 (Performance Outcome, pedagogical, blocks Design + Develop) sit in the Analyze phase. Gate 3 (Pedagogical Strategy, pedagogical) sits in the Design phase. Gates 4 (Source Truth), 5 (Equity & Accessibility), and 6 (Assessment Validity) — all production gates — cluster in the Develop phase. Gate 7 (Release, production) sits in the Implement phase. Gate 8 (Performance-Effect, pedagogical) sits in the Evaluate phase. The four pedagogical gates (1, 2, 3, 8) bookend the framework and remain humans-only at every PRS level. The four production gates (4, 5, 6, 7) cluster in Develop and Implement and are agent-prepared and human-signed, becoming sampleable at higher PRS levels. Gate 2 is marked as the framework's structural blocker: until the eval rubric is signed at Gate 2, neither the Design nor the Develop phase can run.
 
 ### Reading the gate map
 
-The first three gates and the last (Reality, Performance Outcome, Pedagogical Strategy, Performance-Effect) are *pedagogical*. They are humans-only at all maturity levels. They are where the framework's anti-replacement claim lives: these are the irreducibly human decisions, regardless of agent capability.
+The first three gates and the last (Reality, Performance Outcome, Pedagogical Strategy, Performance-Effect) are *pedagogical*. They are humans-only at all PRS levels. They are where the framework's anti-replacement claim lives: these are the irreducibly human decisions, regardless of agent capability.
 
-The middle four (Source Truth, Equity, Assessment Validity, Release) are *production*. They are agent-prepared and human-signed. At Maturity Level 1–2, every production-gate output is reviewed. At PRS-3, only flagged outputs trigger review (the agent's own confidence scoring + automated checks gate the human queue). At PRS-4, production gates become statistical sampling — humans audit a representative slice rather than every artifact.
+The middle four (Source Truth, Equity, Assessment Validity, Release) are *production*. They are agent-prepared and human-signed. At PRS-1 and PRS-2, every production-gate output is reviewed. At PRS-3, only flagged outputs trigger review (the agent's own confidence scoring + automated checks gate the human queue). At PRS-4, production gates become statistical sampling — humans audit a representative slice rather than every artifact.
 
-The pedagogical gates do *not* relax with maturity. That asymmetry is what prevents the framework from sliding into pure agentic autonomy.
+The pedagogical gates do *not* relax at higher PRS levels. That asymmetry is what prevents the framework from sliding into pure agentic autonomy.
 
 ---
 
@@ -363,7 +371,7 @@ The framework's deterministic answer to "what does the agent do, what does the h
 
 The taxonomy uses a third-column tag: **DL** (design loop — compresses ID cycle time), **PL** (performance loop — compresses learner time-to-competency or improves transfer), or **DL+PL** (both).
 
-*Reading the maturity prefixes.* Untagged rows apply at all maturity levels. Rows prefixed **(PRS-3+)** mark capability that is unlocked only at PRS-3 and above; rows prefixed **(PRS-4)** mark capability unlocked only at PRS-4. The prefix is a maturity gate, not a row category — these are not separate "advanced" rows but specific capabilities that PRS-1/PRS-2 implementations should not attempt because the governance maturity required to operate them has not been established. See §6 (Proportional Restraint Scale).
+*Reading the PRS prefixes.* Untagged rows apply at all PRS levels. Rows prefixed **(PRS-3+)** mark capability that is unlocked only at PRS-3 and above; rows prefixed **(PRS-4)** mark capability unlocked only at PRS-4. The prefix is a PRS gate, not a row category — these are not separate "advanced" rows but specific capabilities that PRS-1/PRS-2 implementations should not attempt because the governance discipline required to operate them has not been established. See §6 (Proportional Restraint Scale).
 
 | Agent-led tasks | Human-only tasks | Loop |
 |---|---|---|
@@ -396,7 +404,7 @@ The taxonomy uses a third-column tag: **DL** (design loop — compresses ID cycl
 
 Most agent-led tasks accelerate the *design loop* (DL) — they compress ID cycle time. This is what most published AI-in-ID work focuses on, and the productivity gains are real (the author's federal practitioner observations of first-draft cycle reductions sit here; see §1 and §12). But by itself, design-loop acceleration ships courses faster without proving they move performance.
 
-*Performance-loop acceleration* (PL) is where the framework's organizing outcome actually plays out. PL tasks cluster at PRS-3+ maturity: per-learner variation, real-time scaffolding, performance-support recommendation, continuous adaptation. They belong in the agent column because they are tasks the human ID practitioner *cannot do at scale* — no one can hand-author per-learner content variations for 500 learners — so agent leverage on these tasks is genuinely new capability, not substitution.
+*Performance-loop acceleration* (PL) is where the framework's organizing outcome actually plays out. PL tasks cluster at PRS-3+: per-learner variation, real-time scaffolding, performance-support recommendation, continuous adaptation. They belong in the agent column because they are tasks the human ID practitioner *cannot do at scale* — no one can hand-author per-learner content variations for 500 learners — so agent capability on these tasks is genuinely new ground, not substitution.
 
 A concrete, operational instance of PL acceleration in adjacent practice: AR-overlay performance-support tooling deployed in industrial-machine maintenance contexts — voice in, expert answer out, automatic logging, layered knowledge across documentation and per-asset history, AR overlay at the moment of work. It is not formal training; it is performance support delivered into the workflow, exactly the territory PRS-3+ AAFL implementations occupy. The Apply, Solve, and Change moments of need are served at the point of work, not in a classroom.
 
@@ -410,7 +418,7 @@ The split is not a permanent claim about AI capability. It is a permanent claim 
 
 ## §6. The Proportional Restraint Scale (PRS)
 
-Four levels of HITL implementation maturity. Movement between them is **governance maturity**, not AI capability.
+Four PRS levels of HITL implementation. What advances an organization between them is **governance discipline** — not AI capability.
 
 ### PRS-1 — Assistant
 
@@ -426,9 +434,9 @@ Agents run production tasks (Source Truth, Equity, Assessment Validity, Release 
 
 ### PRS-4 — Bounded autonomy
 
-Multi-agent workflows generate per-learner curriculum end-to-end inside an institution-defined risk envelope. Humans spot-audit, set policy, own escalation. Pedagogical gates stay human; production gates become statistical sampling. The framing changes — at PRS-4, you are not "designing a course" anymore, you are running a performance-acceleration system. Continuous performance-loop acceleration in bounded domains. **No measured productivity bands are available at PRS-4** — the published AI-in-ID literature reports no field deployment at this maturity at this writing; AAFL's PRS-4 prescription is a forward-looking spec, not a measured operating point (see §12 Limitations).
+Multi-agent workflows generate per-learner curriculum end-to-end inside an institution-defined risk envelope. Humans spot-audit, set policy, own escalation. Pedagogical gates stay human; production gates become statistical sampling. The framing changes — at PRS-4, you are not "designing a course" anymore, you are running a performance-acceleration system. Continuous performance-loop acceleration in bounded domains. **No measured productivity bands are available at PRS-4** — the published AI-in-ID literature reports no field deployment at this PRS level at this writing; AAFL's PRS-4 prescription is a forward-looking spec, not a measured operating point (see §12 Limitations).
 
-### The honest stopping point
+### The realistic ceiling
 
 > **Higher restraint is not better. Appropriate restraint is better.**
 
@@ -439,7 +447,7 @@ Most federal and accredited programs should sit at **PRS-2 or PRS-3**. PRS-4 is 
 - **Credentialing and certification programs.** A credential whose content was authored by autonomous agents without human gate-review on each artifact cannot defend itself in audit.
 - **Classified content authoring.** No agent autonomy on classified material. Classified content authoring caps at PRS-2 even with approved infrastructure.
 - **High-consequence performance training.** Anything where a learner's performance failure has safety, security, or financial consequences requires human-signed production gates.
-- **Programs without operational governance maturity.** PRS-4 governance is not a checklist; it is a running system. Organizations that cannot reliably operate PRS-3 governance cannot operate PRS-4 governance at all.
+- **Programs without operational governance discipline.** PRS-4 governance is not a checklist; it is a running system. Organizations that cannot reliably operate PRS-3 governance cannot operate PRS-4 governance at all.
 
 **Where PRS-4 is appropriate:**
 
@@ -448,9 +456,9 @@ Most federal and accredited programs should sit at **PRS-2 or PRS-3**. PRS-4 is 
 - **Performance support continuum** (real-time recommendations within a defined competency space — the Match · Gap · Recommend pattern, or AR-overlay performance-support tooling deployed at the point of work in industrial-machine maintenance contexts)
 - **Adaptive remediation** (agent-driven re-teaching loops *after* the learner has failed a human-validated assessment)
 
-### Maturity, performance, and what the framework actually delivers
+### Performance and what the framework actually delivers
 
-The maturity model is not just "how much can the agent do" — it is **how much workplace performance acceleration the system delivers**:
+The PRS is not just "how much can the agent do" — it is **how much workplace performance acceleration the system delivers**:
 
 | Level | Design-loop impact | Performance-loop impact |
 |---|---|---|
@@ -465,8 +473,15 @@ PRS-1 / PRS-2 are *productivity* stories (faster ID work). PRS-3 / PRS-4 are *ca
 
 Three questions, asked in order:
 
-1. **What is the consequence space?** Credentialing / classified / safety-critical → cap at PRS-2. CUI / accredited but not classified → consider PRS-3. Public-trust unclassified high-volume → consider PRS-4.
-2. **What governance is operationally running?** If the organization cannot reliably operate PRS-1's audit trail, do not aspire to PRS-3. Maturity follows operational capacity, not desire.
+1. **What is the consequence space?** The consequence space sets the PRS ceiling:
+
+   | Consequence space                                | PRS ceiling          |
+   |--------------------------------------------------|----------------------|
+   | Credentialing / classified / safety-critical     | Cap at **PRS-2**     |
+   | CUI / accredited but not classified              | Consider **PRS-3**   |
+   | Public-trust unclassified high-volume            | Consider **PRS-4**   |
+
+2. **What governance is operationally running?** PRS-1 governance means a working audit trail (a record of which agent ran which task with which model against which source, with the human gate decision logged); reliable handling of agent-output classification; and a documented escalation path when the human reviewer disagrees with the agent. If the organization cannot reliably operate that PRS-1 baseline, do not aspire to PRS-3. PRS readiness follows operational capacity, not desire.
 3. **What is the performance claim?** If the goal is "ship courses faster," PRS-2 suffices. If the goal is "compress time-to-competency for a 10,000-person workforce," PRS-3+ becomes the answer. Match the level to the claim.
 
 If any answer is unclear, default to one level lower than the question would suggest. *Higher restraint is not better; appropriate restraint is better.*
@@ -481,7 +496,7 @@ How to evaluate an AI-designed instructional intervention. Borrows the eval-driv
 
 > The eval rubric for a given course is authored at the **Performance Outcome Gate** (HITL Gate 2), *before* any Develop-phase agent runs. Agents are then evaluated against those criteria.
 
-This is the single biggest defense against the agent-era failure mode of *artifacts that are well-formed but not instructionally sound*. An agent that doesn't know what success looks like will produce confident, professional, fluent output that misses the actual outcome — and a reviewer who is checking surface fluency will let it through. The Evaluation-as-Spec Layer makes this discipline **blocking**: the Develop phase cannot run until the eval rubric is signed at Gate 2.
+This is the single biggest defense against the agent-era failure mode of *artifacts that are well-formed but not instructionally sound*. An agent that doesn't know what success looks like will produce confident, professional, fluent output that misses the actual outcome — and a reviewer who is checking surface fluency will let it through. The Evaluation-as-Spec Layer makes this discipline **blocking**: neither the Design nor the Develop phase can run until the eval rubric is signed at Gate 2.
 
 ### Six dimensions, ordered by priority
 
@@ -493,7 +508,7 @@ This is the single biggest defense against the agent-era failure mode of *artifa
 
 *Why primary.* Workplace performance is the framework's organizing outcome. An intervention that does not move performance is a learning experience, not a performance-acceleration intervention. The framework is opinionated: this dimension is the spine, not one of six equal dimensions. This is Kirkpatrick L3 (Behavior) and L4 (Results) territory.
 
-*Failure mode this catches.* Beautiful, well-formed courses that learners complete and pass and that change nothing about workplace performance.
+*Failure mode this catches.* Beautiful, well-formed courses that learners complete and pass and that change nothing about workplace performance. The phrasing can read as a contradiction — *how can a well-formed course change nothing?* — but the contradiction is the point. A well-formed course is a *necessary* condition for performance gain, not a *sufficient* one. Transfer-to-job depends on opportunity to practice, reinforcement structures, manager behavior, performance-support availability at the moment of work, and the gap between training-environment fidelity and on-the-job conditions. The course can satisfy every learning-attainment criterion and still fail Kirkpatrick L3/L4 because it never made contact with those downstream conditions. This is exactly why AAFL anchors in workplace performance rather than course completion: the framework refuses to let well-formedness substitute for outcome.
 
 #### 2. Outcome attainment
 
@@ -511,7 +526,7 @@ The agent-generated assessment is the place where surface plausibility is most e
 
 Did the implementation match the design intent? Detects drift between Gate 3 (Pedagogical Strategy) decisions and the artifact actually produced; between Gate 2 (Performance Outcome) criteria and assessment items at Gate 6; between learner persona at Gate 1 and content reading level / cultural fit / contextual examples.
 
-Agents drift between phases. Strategy committed at Gate 3 may not survive into Develop without explicit fidelity checks.
+Agents drift between phases. The strategy committed at Gate 3 doesn't always survive contact with the source materials and constraint set the agent encounters in Develop; without explicit fidelity checks, the agent re-anchors to the local context and produces artifacts internally consistent with that local context but inconsistent with the Gate 3 commitment. The general phenomenon — capability variance and anchoring drift across adjacent agent tasks — is consistent with the empirical findings on the "jagged frontier" of AI productivity (Brynjolfsson et al., 2023; Dell'Acqua et al., 2023). Fidelity checks at Gate 6 close the loop.
 
 #### 5. Learner experience
 
@@ -519,7 +534,7 @@ The learner-side construct. Did the intervention work for the learner across the
 
 *Measures:* cognitive load fit (Sweller-tradition working-memory considerations applied to the artifact's information density and sequence); engagement (drop-off rates, replay rates, voluntary continuation past required completion); equity-of-experience across subgroups (does the median learner succeed while the tails are abandoned? are there subgroup-by-outcome interactions worth surfacing?).
 
-*Why distinct from #2 (Outcome attainment).* A learner can meet the objective and have had a bad experience — high cognitive load, low engagement, equity gaps in supporting subgroups. v1.1 merged this dimension with Production Integrity because both were operationally amenable to audit + automated checks; v1.2 separates them because they answer fundamentally different questions: *did the learner have the experience the design intended* (this dimension) vs *was the artifact infrastructurally fit to ship* (the next dimension).
+*Why distinct from #2 (Outcome attainment).* A learner can meet the objective and have had a bad experience — high cognitive load, low engagement, equity gaps in supporting subgroups. Learner Experience and Production Integrity (the next dimension) are kept separate because they answer fundamentally different questions: *did the learner have the experience the design intended* (this dimension) vs *was the artifact infrastructurally fit to ship* (the next dimension). Conflating them obscures the trade-offs.
 
 #### 6. Production integrity
 
@@ -527,18 +542,17 @@ The infrastructure-side construct. Was the artifact infrastructurally fit to shi
 
 *Measures:* source-traceability (every claim citable to a validated source; no hallucinated authority); accessibility conformance (WCAG 2.1 AA, Section 508, alt-text completeness, transcript accuracy, contrast compliance); classification compliance (CUI marking, FedRAMP, NIST 800-171 where applicable; ITAR/EAR where applicable).
 
-*Why distinct from #5 (Learner experience).* Production integrity dimensions are *runnable as checks against spec* — accessibility scanners, citation auditors, classification-marking validators — without a learner in the loop. Learner-experience dimensions require learner data. In federal contexts, production integrity is gating, not advisory: a CUI training program that ships without classification compliance is not an instructional design problem, it is a compliance problem with instructional design consequences.
+*Why distinct from #5 (Learner experience).* Production integrity dimensions are *runnable as checks against spec* — accessibility scanners, citation auditors, classification-marking validators — without a learner in the loop. Learner-experience dimensions require learner data. In federal contexts, production integrity is gating, not advisory: a CUI training program that ships without classification compliance — for example, source material that should have been marked CUI but was reproduced unmarked into a learner-facing module, or an artifact stored in a tenant cleared only for FOUO — is not primarily an instructional design problem. It is a federal compliance incident. The ID team owns the consequences (rework, retraction, possible reporting obligation), the program owns the audit-finding exposure, and the institution owns the accreditation risk. AAFL treats production integrity as gating to keep this category of failure out of the path to release in the first place.
 
 ### Eval framework × Proportional Restraint Scale
 
-| Maturity level | Eval discipline |
-|---|---|
-| PRS-1 | Eval rubric authored, primarily evaluated against human work |
-| PRS-2 | Rubric authored at Gate 2; agent-drafted artifacts evaluated against rubric at Develop; 100% human review |
-| PRS-3 | Rubric authored at Gate 2 and **blocks** Develop; agents run production tasks against rubric; humans review flagged outputs and statistical samples |
-| PRS-4 | Rubric authored at Gate 2; **continuous** evaluation of agent outputs against rubric in real-time; humans audit aggregate eval performance |
+The rubric is authored at Gate 2 before Design at every PRS level — its existence is constant. What changes across PRS levels is *what runs against it* and *how much is reviewed*:
 
-The shift across levels is *what runs against the rubric* (human work vs agent work), not *whether the rubric exists*. The rubric always exists, always at Gate 2, always before Develop.
+- **PRS-1 and PRS-2** — human or human-led drafts are evaluated against the rubric; 100% human review of every artifact.
+- **PRS-3** — agents run production tasks against the rubric; humans review agent-flagged outputs plus a statistical sample of the rest.
+- **PRS-4** — continuous, real-time evaluation of agent outputs against the rubric; humans audit aggregate eval performance rather than individual artifacts.
+
+Refer back to §6 for the substantive PRS level definitions; this section only restates the eval-discipline implications at each level.
 
 ### What the eval framework requires
 
@@ -550,7 +564,7 @@ The framework refuses to let Develop run until the practitioner can answer:
 4. What pedagogical strategy has been committed, and what is fidelity drift?
 5. What does equity-of-experience look like for this learner population?
 
-If the practitioner cannot answer these before Develop, the rubric is not yet authored.
+If the practitioner cannot answer these before Design, the rubric is not yet authored.
 
 ---
 
@@ -563,19 +577,21 @@ Architectural depth on the three layers that did not exist in classic ADDIE.
 Routes work between agents and humans. Decides:
 
 - **Which agent runs which task.** A specialized item-writer agent handles distractor generation; a different agent handles facilitator-guide drafting; orchestration knows which is appropriate.
-- **Which model is appropriate.** Frontier models for high-judgment drafting; cost-optimized models for high-volume formatting; federal-tenant models (CamoGPT, NIPRGPT, government-tenant Claude/Gemini) for CUI work. Orchestration is the layer that enforces classification-based model selection.
+- **Which model is appropriate.** Frontier models for high-judgment drafting; cost-optimized models for high-volume formatting; government-tenant generative AI tools (only environments cleared for the relevant data classification) for CUI work. Orchestration is the layer that enforces classification-based model selection.
 - **When artifacts route to which gate.** A drafted assessment item routes to Gate 6 (Assessment Validity) for human review at PRS-1 / PRS-2; at PRS-3+, agent-confidence-flagged items route to Gate 6 while clean items route directly to Validate.
 - **What gets logged.** Every agent invocation, every model version, every human gate decision. The orchestration log is the input to the Governance Layer audit trail.
 
 ### Evaluation-as-Spec
 
-The blocking discipline. The Develop phase cannot run until:
+*Evaluation-as-Spec* is a practice borrowed from agent engineering (Anthropic Engineering, 2025) where the criteria an agent's output will be judged against are defined as a structured artifact — the *eval rubric* — *before* the agent runs. The rubric is the spec the agent fulfills. The discipline inverts the conventional Design-then-evaluate flow: instead of building first and checking against criteria afterward, AAFL requires the criteria to exist, in writing, before any building begins. This is the framework's structural answer to the agent-era failure mode of *artifacts that are well-formed but not instructionally sound*.
+
+**The blocking discipline.** Neither the Design nor the Develop phase can run until:
 
 1. The Performance Outcome Gate (Gate 2) has been signed
 2. The eval rubric is authored, including all six dimensions (Performance attainment, Outcome attainment, Construct validity, Pedagogical fidelity, Learner experience, Production integrity)
 3. The rubric defines measurable criteria — not aspirations
 
-The Evaluation-as-Spec Layer is the framework's structural answer to the agent-era failure mode of *artifacts that are well-formed but not instructionally sound*. Without a blocking eval rubric, agents will produce surface-fluent content that drifts from the intended outcome. The Layer makes the rubric a precondition, not a postcondition.
+Without a blocking eval rubric, agents will produce surface-fluent content that drifts from the intended outcome. The Layer makes the rubric a precondition, not a postcondition.
 
 ### Governance
 
@@ -585,9 +601,9 @@ Institutional accountability. Captures:
 - **Classification handling.** FedRAMP, NIST 800-171, CUI marking, Section 508 conformance, ITAR/EAR where applicable.
 - **Accreditation alignment.** ACE evaluator expectations; Quality Matters Standards 2 (Learning Objectives), 3 (Assessment), 8 (Accessibility); WCAG 2.1 AA + Section 508 conformance evidence.
 - **Escalation paths.** Defined human-side decision protocol for when the human reviewer disagrees with the agent's output, when human override is logged, when the disagreement escalates to a senior reviewer or governance board.
-- **Maturity caps by classification.** No PRS-4 on classified content. PRS-3 only on approved federal-tenant infrastructure. PRS-4 only on public-trust unclassified high-volume work. Caps are *enforced* by the Layer, not aspirational.
+- **PRS caps by classification.** No PRS-4 on classified content. PRS-3 only on approved federal-tenant infrastructure. PRS-4 only on public-trust unclassified high-volume work. Caps are *enforced* by the Layer, not aspirational.
 
-The federal claim AAFL can defensibly make: among the published AI-era ID frameworks reviewed in this work (see Appendix B for the comparative scan — ADDIE, FRAME™, Anthropic 4Ds, Chai et al., EduPlanner, AUSS, Action Mapping), AAFL appears to be the only framework that prescribes maturity caps tied to data classification. That is exactly the question federal contracting officers ask first.
+The federal claim AAFL can defensibly make: among the published AI-era ID frameworks reviewed in this work (see Appendix B for the comparative scan — ADDIE, FRAME™, Anthropic 4Ds, Chai et al., EduPlanner, AUSS, Action Mapping), AAFL appears to be the only framework that prescribes PRS caps tied to data classification. That is exactly the question federal contracting officers ask first.
 
 ---
 
@@ -597,7 +613,7 @@ AAFL enters the literature as a coherent extension and integration of existing w
 
 ### The performance tradition
 
-AAFL is anchored in **workplace performance** as the legitimate outcome of L&D investment — a position that defines the Human Performance Technology (HPT) tradition and predates the agent era by half a century. The decisive intellectual moves in that tradition include Thomas Gilbert's *Human Competence* (1978), which reframed the unit of analysis from the learner's behavior to the performer's output and gave the field its enduring distinction between behavior and accomplishment; Geary Rummler and Alan Brache's *Improving Performance* (1990), which treated workplace performance as a systems-level property; and the long-running professional infrastructure of the International Society for Performance Improvement, which sustained the discipline through periods when the rest of L&D was preoccupied with course completion as the win condition.
+The Human Performance Technology (HPT) tradition is the bedrock AAFL inherits — a body of work that has insisted on workplace performance as the legitimate outcome of L&D investment for more than half a century. The decisive intellectual contributions in that tradition include Thomas Gilbert's *Human Competence* (1978), which reframed the unit of analysis from the learner's behavior to the performer's output and gave the field its enduring distinction between behavior and accomplishment; Geary Rummler and Alan Brache's *Improving Performance* (1990), which treated workplace performance as a systems-level property; and the long-running professional infrastructure of the International Society for Performance Improvement, which sustained the discipline through periods when the rest of L&D was preoccupied with course completion as the win condition.
 
 Workplace-oriented operational articulations of the same commitment include Cathy Moore's Action Mapping (2008), which insists on backward design from business performance goals; Bob Mosher and Conrad Gottfredson's 5 Moments of Need (2011), which draws the line between formal learning (the New and More moments) and performance support (Apply, Solve, Change) and locates the bulk of workplace skill acquisition outside formal training; Allison Rossett and Lisa Schafer's performance-support taxonomy (Planners, Advisors, Coaches, Sidekicks, 2007) which named the categories of in-workflow help that AR-overlay tooling now operates; and Robert Brinkerhoff's Success Case Method (2003), which provided the methodology for tracing whether an intervention actually moved performance for the workers who used it. The Kirkpatrick L1–L4 vocabulary (1959, updated 2016) is the dialect every reviewer of AAFL will use; AAFL adopts the vocabulary natively.
 
@@ -631,7 +647,7 @@ These four anchors are named here, not at individual gates, in keeping with the 
 
 **Anthropic AI Fluency Framework / 4Ds** (Dakan & Feller, 2023–2025). The 4Ds (Delegation, Description, Discernment, Diligence) are practitioner *competencies*; AAFL is the *process* those competencies operate within. Discernment lives at every HITL gate; Delegation defines the agent-vs-human task split; Description briefs the agent at every gate; Diligence is the audit trail the Governance Layer records. *Disclosure:* the author completed Anthropic Academy's *AI Fluency for Educators* and *AI Fluency: Framework & Foundations* courses as a learner; AAFL is informed by but independent of those curricula, and the author has no instructional or advisory role at Anthropic.
 
-**Chai et al.** (2025). Peer-reviewed phase-by-phase synthesis of generative AI in instructional system design. The academic anchor for the position that AI integration is phase-specific, not monolithic. AAFL extends Chai et al. by adding the gate taxonomy, the maturity model with caps, the Evaluation-as-Spec Layer, and workplace performance as the eval spine.
+**Chai et al.** (2025). Peer-reviewed phase-by-phase synthesis of generative AI in instructional system design. The academic anchor for the position that AI integration is phase-specific, not monolithic. AAFL extends Chai et al. by adding the gate taxonomy, the PRS with caps, the Evaluation-as-Spec Layer, and workplace performance as the eval spine.
 
 **Multi-agent academic systems — EduPlanner, AUSS** (2025). Cited as prior art on multi-agent ID systems. AAFL distinguishes itself by foregrounding *human gates*, not multi-agent collaboration. EduPlanner's Evaluator/Optimizer/Analyst is an agent harness; AAFL's eight gates are human criteria.
 
@@ -647,9 +663,9 @@ These four anchors are named here, not at individual gates, in keeping with the 
 
 ### Engagement with the critic camp
 
-A framework that proposes to operationalize agent leverage in instructional design owes the reader a substantive engagement with the critical AI-in-education tradition, not just the productivity-oriented and HPT-oriented traditions. Several concerns from that tradition shape AAFL's design choices even when they are not named at individual features.
+A framework that proposes to operationalize agent capability in instructional design owes the reader a substantive engagement with the critical AI-in-education tradition, not just the productivity-oriented and HPT-oriented traditions. Several concerns from that tradition shape AAFL's design choices even when they are not named at individual features.
 
-**Selwyn's *Should Robots Replace Teachers?*** (2019, Polity) raises the deskilling concern — that delegating authorship to AI agents hollows out the practitioner profession over time, leaving humans only the credentialing-and-rubber-stamping residue of work the agent now drafts. AAFL's structural response is the four pedagogical gates: Learner Reality, Performance Outcome, Pedagogical Strategy, and Performance-Effect are *humans-only at every maturity level*, including PRS-4. The framework's anti-replacement claim is not a sentimentality about human craft; it is a structural commitment that the value-loaded decisions of instructional design do not relax with model capability. The deskilling concern is taken seriously precisely by refusing to let production-gate automation creep across the pedagogical line.
+**Selwyn's *Should Robots Replace Teachers?*** (2019, Polity) raises the deskilling concern — that delegating authorship to AI agents hollows out the practitioner profession over time, leaving humans only the credentialing-and-rubber-stamping residue of work the agent now drafts. AAFL's structural response is the four pedagogical gates: Learner Reality, Performance Outcome, Pedagogical Strategy, and Performance-Effect are *humans-only at every PRS level*, including PRS-4. The framework's anti-replacement claim is not a sentimentality about human craft; it is a structural commitment that the value-loaded decisions of instructional design do not relax with model capability. The deskilling concern is taken seriously precisely by refusing to let production-gate automation creep across the pedagogical line.
 
 **Williamson's *Big Data in Education*** (2017, SAGE) raises the surveillance and data-political concerns inherent in learner analytics, adaptive systems, and per-learner content variation — exactly the territory PRS-3 and PRS-4 operate in. AAFL's Governance Layer (§8) and classification-aware caps (§10) are partly a structural response: audit trail, classification handling, escalation paths, and named-accountable-human signatures are the institutional infrastructure that prevents AAFL implementations from becoming the surveillance-and-optimization regimes Williamson describes. PRS-4 is *bounded* autonomy — bounded by classification, by domain, by named risk envelope — not unbounded.
 
@@ -671,10 +687,10 @@ For classified, CUI, and federally-accredited contexts, three things change in A
 
 Audit trail must satisfy FedRAMP, NIST 800-171, and contract-specific marking requirements. The Governance Layer captures chain of custody for every agent-generated artifact, model version recorded, prompt-and-response archived for the contract retention window. Section 508 conformance evidence is retained alongside the artifact-of-record.
 
-### Maturity caps by classification
+### PRS caps by classification
 
 - **Classified content authoring caps at PRS-2.** No agent autonomy on classified material. Classified content authoring is human-led with agent assistance only.
-- **CUI training development can reach PRS-3 with approved infrastructure.** Government-tenant Claude or Gemini, CamoGPT, NIPRGPT — only environments cleared for the relevant data classification. PRS-3 is *not* available on commercial-tenant frontier models for CUI work.
+- **CUI training development can reach PRS-3 with approved infrastructure.** Government-tenant generative AI tools only — environments cleared for the relevant data classification. PRS-3 is *not* available on commercial-tenant frontier models for CUI work.
 - **Public-trust and unclassified high-volume work can reach PRS-4.** Annual compliance refreshers, role-based onboarding pathways, performance-support adaptive remediation in bounded domains.
 
 AAFL prescribes the cap by classification, not by capability. This is the framework's distinctive federal claim.
@@ -692,7 +708,7 @@ The framework's documentation artifact-of-record is *designed* to drop into an A
 
 ### The federal-applicability claim
 
-Among the published AI-era ID frameworks reviewed in this work — ADDIE, FRAME™, Anthropic 4Ds, Chai et al., EduPlanner, AUSS, and the HPT performance-orientation lineage (see Appendix B for the comparative scan) — AAFL appears to be the only framework that prescribes maturity caps tied to data classification. This is the question federal contracting officers ask first when evaluating AI integration proposals. FRAME™, the 4Ds, and Chai et al. are all classification-agnostic. AAFL's classification-aware caps are not a restriction; they are the source of its federal credibility.
+Among the published AI-era ID frameworks reviewed in this work — ADDIE, FRAME™, Anthropic 4Ds, Chai et al., EduPlanner, AUSS, and the HPT performance-orientation lineage (see Appendix B for the comparative scan) — AAFL appears to be the only framework that prescribes PRS caps tied to data classification. This is the question federal contracting officers ask first when evaluating AI integration proposals. FRAME™, the 4Ds, and Chai et al. are all classification-agnostic. AAFL's classification-aware caps are not a restriction; they are the source of its federal credibility.
 
 ---
 
@@ -700,23 +716,23 @@ Among the published AI-era ID frameworks reviewed in this work — ADDIE, FRAME�
 
 Five real risks, named so they can be defended.
 
-### Risk 1 — Maturity drift
+### Risk 1 — PRS drift
 
 Organizations read the model as a ladder and push past their appropriate level.
 
-*Mitigation.* Explicit "honest stopping point" language in §6; case studies of PRS-2 and PRS-3 wins, not just PRS-4; the "default to one level lower than the question would suggest" rule.
+*Mitigation.* Explicit "realistic ceiling" language in §6; case studies of PRS-2 and PRS-3 wins, not just PRS-4; the "default to one level lower than the question would suggest" rule.
 
 ### Risk 2 — Eval theatre
 
 Teams adopt the eval framework as documentation rather than as a constraint on the agent loop.
 
-*Mitigation.* The Evaluation-as-Spec Layer is *blocking* — agents cannot run Develop until the eval rubric is signed at Gate 2. The discipline is structural, not aspirational.
+*Mitigation.* The Evaluation-as-Spec Layer is *blocking* — agents cannot run Design or Develop until the eval rubric is signed at Gate 2. The discipline is structural, not aspirational.
 
 ### Risk 3 — Gate fatigue
 
 Eight gates feel like eight bottlenecks; teams collapse them to ship faster, defeating the purpose.
 
-*Mitigation.* The maturity model permits PRS-3 gate-flagging — only flagged outputs trigger review. The four pedagogical gates are non-negotiable; the four production gates are sampleable at higher maturity. The framework is *designed to scale review intensity with maturity*.
+*Mitigation.* The PRS permits gate-flagging at PRS-3 — only flagged outputs trigger review. The four pedagogical gates are non-negotiable; the four production gates are sampleable at higher PRS levels. The framework is *designed to scale review intensity with the PRS level in operation*.
 
 ### Risk 4 — The autonomy-responsibility problem
 
@@ -738,19 +754,19 @@ AAFL is independent IP authored by Ruchir Bakshi. The framework is offered to th
 
 ## §12. Limitations and Future Work
 
-A framework that publishes its own caps owes the reader an account of its own limits. AAFL v1.2 is a publishing-ready spec, not a validated artifact, and the gap between the two should be visible to anyone deciding whether to adopt it.
+A framework that publishes its own caps owes the reader an account of its own limits. AAFL is a publishing-ready spec, not a validated artifact, and the gap between the two should be visible to anyone deciding whether to adopt it.
 
 ### Limitations
 
-- **Not yet operated end-to-end at PRS-3+ maturity.** The framework's PRS-1 and PRS-2 prescriptions are grounded in the author's federal practitioner observations across ACE-accredited programs (see §1.5 Method). The PRS-3 productivity band reported in §6 is *projected, not measured*; no published field test of AAFL at PRS-3 or PRS-4 maturity exists at this writing.
+- **Not yet operated end-to-end at PRS-3+.** The framework's PRS-1 and PRS-2 prescriptions are grounded in the author's federal practitioner observations across ACE-accredited programs (see §1.5 Method). The PRS-3 productivity band reported in §6 is *projected, not measured*; no published field test of AAFL at PRS-3 or PRS-4 exists at this writing.
 
-- **Single-author synthesis without external review panel.** AAFL was developed by one practitioner-researcher (see §1.5). The framework has not been subjected to Delphi consensus with an independent expert panel, independent peer review of the integrated framework (individual sources are peer-reviewed; the integration is not), or formal user research with a representative practitioner sample. v1.2 is offered to the field with the explicit invitation that external review and field testing become the next stage of development.
+- **Single-author synthesis without external review panel.** AAFL was developed by one practitioner-researcher (see §1.5). The framework has not been subjected to Delphi consensus with an independent expert panel, independent peer review of the integrated framework (individual sources are peer-reviewed; the integration is not), or formal user research with a representative practitioner sample. This whitepaper is offered to the field with the explicit invitation that external review and field testing become the next stage of development.
 
 - **Federal proof-of-application reported as practitioner observation, not citable artifact.** The author's federal ID practice produced the operational observations on first-draft cycle compression reported in §1 and the PRS-1 / PRS-2 productivity bands reported in §6. The underlying internal deliverables are not citable in public-facing AAFL artifacts. A reader who wishes to audit those observations independently does not have a published artifact to consult.
 
 - **PRS productivity bands are practitioner-level observations, not controlled-study results.** The numerical ranges reported in §6 are anchored to published generative-AI productivity studies (Brynjolfsson et al., 2023; Dell'Acqua et al., 2023) where the empirical literature supports the anchor, and labeled as practitioner observation where the author's federal experience is the source. No row in §6 should be read as the output of a controlled experiment on AAFL itself.
 
-- **Scope explicitly excludes K-12 and adult-non-workplace learning.** AAFL is designed for workplace performance contexts (federal training, corporate L&D, higher-ed-to-workplace pipelines). The gate taxonomy and the construct-validity dimension are transferable to K-12, but the maturity-caps-by-classification framing does not map cleanly to FERPA / COPPA regulatory regimes. K-12-specific application is outside the framework's claim space.
+- **Scope explicitly excludes K-12 and adult-non-workplace learning.** AAFL is designed for workplace performance contexts (federal training, corporate L&D, higher-ed-to-workplace pipelines). The gate taxonomy and the construct-validity dimension are transferable to K-12, but the PRS-caps-by-classification framing does not map cleanly to FERPA / COPPA regulatory regimes. K-12-specific application is outside the framework's claim space.
 
 - **The pedagogical-vs-production split is a *theoretical commitment*.** The §5 task assignments — which rows sit in the agent column and which in the human-only column — are versioned. The commitment is to the discipline of asking *which decisions belong to humans regardless of capability*, not to a permanent row assignment. Field experience may require updates; see §11 Risk 4 and §5 "When the line moves."
 
@@ -764,9 +780,9 @@ A framework that publishes its own caps owes the reader an account of its own li
 
 - **Open-source the eval rubric template and gate-checklist as living artifacts.** The companion tactical assets — the HITL Decision-Gate Practitioner Checklist and the AAFL Eval Rubric Template — are presently bundled with the framework spec. Releasing them as separately versioned artifacts under the same © Ruchir Bakshi 2026 attribution would let the field test, fork, and feed back into them without waiting for a v1.3 framework release.
 
-- **K-12-specific application paper.** The gate taxonomy and construct-validity dimension are transferable; the maturity-caps-by-classification framing is not. A separate paper extending AAFL to K-12 — re-anchored in FERPA/COPPA rather than FedRAMP/NIST 800-171 — would address the audience explicitly excluded here without compromising the workplace-performance commitment of the present framework.
+- **K-12-specific application paper.** The gate taxonomy and construct-validity dimension are transferable; the PRS-caps-by-classification framing is not. A separate paper extending AAFL to K-12 — re-anchored in FERPA/COPPA rather than FedRAMP/NIST 800-171 — would address the audience explicitly excluded here without compromising the workplace-performance commitment of the present framework.
 
-The framework's structure is designed to tolerate row-level updates, comparative validation, and federation with adjacent published frameworks without architectural rewrites. v1.2 is the starting point; field experience is the next contributor.
+The framework's structure is designed to tolerate row-level updates, comparative validation, and federation with adjacent published frameworks without architectural rewrites. The published spec is the starting point; field experience is the next contributor.
 
 ---
 
@@ -786,19 +802,19 @@ Workplace performance — measured as time-to-competency, error rate, throughput
 
 **Q: Is AAFL appropriate for K-12 education?**
 
-The framework is designed for workplace performance contexts (federal training, corporate L&D, higher-ed-to-workplace pipelines). K-12 has different stakeholder structures, different consequence spaces, and different regulatory regimes (FERPA, COPPA). The gate taxonomy and the eval framework's construct-validity dimension are transferable, but the maturity-caps-by-classification framing does not map cleanly. K-12-specific application would require its own work.
+The framework is designed for workplace performance contexts (federal training, corporate L&D, higher-ed-to-workplace pipelines). K-12 has different stakeholder structures, different consequence spaces, and different regulatory regimes (FERPA, COPPA). The gate taxonomy and the eval framework's construct-validity dimension are transferable, but the PRS-caps-by-classification framing does not map cleanly. K-12-specific application would require its own work.
 
 **Q: Does AAFL require any specific tooling or platform?**
 
 No. The framework is platform-agnostic. The Orchestration Layer can be operated manually, with workflow tools, or with multi-agent harnesses. The Evaluation-as-Spec Layer requires a documented rubric — the format is up to the implementer. The Governance Layer requires audit trail capability that organizations operating under federal accreditation already have.
 
-**Q: What's the path for an organization currently at PRS-1 (Assistant) maturity?**
+**Q: What's the path for an organization currently at PRS-1 (Assistant)?**
 
-Audit your governance maturity first (can you reliably operate the audit trail at PRS-1? Are gate decisions logged?). Then identify a pilot scope at PRS-2 (one course, one item bank, one storyboard pipeline). Build out the Evaluation-as-Spec discipline before lifting maturity (rubric authored at Gate 2 on the pilot scope before any agent runs). Move to PRS-3 only after PRS-2 has been operational across multiple deliverables and the gate-flagging discipline is reliable.
+Audit your governance discipline first (can you reliably operate the audit trail at PRS-1? Are gate decisions logged?). Then identify a pilot scope at PRS-2 (one course, one item bank, one storyboard pipeline). Build out the Evaluation-as-Spec discipline before lifting to a higher PRS level (rubric authored at Gate 2 on the pilot scope before any agent runs). Move to PRS-3 only after PRS-2 has been operational across multiple deliverables and the gate-flagging discipline is reliable.
 
-**Q: What are the failure modes of trying to operate AAFL at the wrong maturity level?**
+**Q: What are the failure modes of trying to operate AAFL at the wrong PRS level?**
 
-Operating below your appropriate level wastes agent leverage (you're paying for human review that the maturity model would automate). Operating above your appropriate level fails the audit trail (you can't produce the documentation an accreditation review demands). Both failure modes are real; the second is more dangerous because it's harder to detect until something goes wrong.
+Operating below your appropriate level wastes agent capacity (you're paying for human review that a higher PRS level would automate). Operating above your appropriate level fails the audit trail (you can't produce the documentation an accreditation review demands). Both failure modes are real; the second is more dangerous because it's harder to detect until something goes wrong.
 
 **Q: How is AAFL related to the Anthropic AI Fluency framework (4Ds)?**
 
@@ -882,7 +898,7 @@ Williamson, B. (2017). *Big data in education: The digital future of learning, p
 
 ## About the Author
 
-**Ruchir Bakshi** is a federal instructional design consultant. He has applied his AI-Enhanced ADDIE methodology across ACE-accredited graduate certificate and post-baccalaureate programs at the Center for Development of Security Excellence, and authored the AI Prompt Library for Instructional Systems Designers. He runs the [instructionalai.org](https://instructionalai.org) ecosystem of practitioner-first resources, including [addieguide.com](https://addieguide.com).
+**Ruchir Bakshi** is a federal instructional design consultant. He has applied his AI-Enhanced ADDIE methodology across ACE-accredited graduate certificate and post-baccalaureate programs at the Center for Development of Security Excellence, and authored the AI Prompt Library for Instructional Systems Designers. He runs the [instructionalai.org](https://instructionalai.org) ecosystem of practitioner-first resources.
 
 AAFL is independent IP. © Ruchir Bakshi 2026, all rights reserved. Suggested citation: *Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.2). instructionalai.org.*
 
@@ -902,6 +918,7 @@ A consolidated reference for the acronyms used in this paper. Every acronym belo
 | **CAST** | Center for Applied Special Technology (publisher of the UDL Guidelines) |
 | **cmi5** | Computer-Managed Instruction profile of xAPI |
 | **CUI** | Controlled Unclassified Information |
+| **DDVR** | Draft · Discern · Validate · Release — the four steps of the Translator's Loop, run by the human practitioner against every agent-produced artifact within each ADDIE phase |
 | **DL** | Design Loop (taxonomy tag: tasks that compress ID cycle time) |
 | **DoD** | Department of Defense |
 | **EAR** | Export Administration Regulations |
@@ -920,11 +937,10 @@ A consolidated reference for the acronyms used in this paper. Every acronym belo
 | **L&D** | Learning and Development |
 | **LMS** | Learning Management System |
 | **NICE** | National Initiative for Cybersecurity Education (NIST framework) |
-| **NIPRGPT** | DoD-tenant generative AI on the Non-Classified Internet Protocol Router Network |
 | **NIST** | National Institute of Standards and Technology |
 | **OPM** | Office of Personnel Management |
 | **PL** | Performance Loop (taxonomy tag: tasks that compress time-to-competency or improve transfer-to-job) |
-| **PRS** | Proportional Restraint Scale (AAFL's four-level autonomy maturity model) |
+| **PRS** | Proportional Restraint Scale — AAFL's four-level autonomy scale (PRS-1 Sandbox · PRS-2 Co-designer · PRS-3 Production Partner · PRS-4 Performance System) |
 | **QM** | Quality Matters |
 | **SAM** | Successive Approximation Model (Allen Interactions) |
 | **SCORM** | Sharable Content Object Reference Model |
@@ -933,19 +949,19 @@ A consolidated reference for the acronyms used in this paper. Every acronym belo
 | **WCAG** | Web Content Accessibility Guidelines (W3C) |
 | **xAPI** | Experience API (formerly Tin Can API) |
 
-*Note.* "Section 508" is a section of the U.S. Rehabilitation Act, not an acronym; it is preserved as-written throughout the paper. "CamoGPT" is a federal-tenant generative AI product name. The taxonomy column-tag prefixes **(PRS-3+)** and **(PRS-4)** in §5 are maturity-gate prefixes, not acronyms; see §5 (Reading the maturity prefixes).
+*Note.* "Section 508" is a section of the U.S. Rehabilitation Act, not an acronym; it is preserved as-written throughout the paper. The taxonomy column-tag prefixes **(PRS-3+)** and **(PRS-4)** in §5 are PRS-gate prefixes, not acronyms; see §5 (Reading the PRS prefixes).
 
 ---
 
 ## Appendix B. Comparison of Published AI-Era ID Frameworks
 
-This appendix substantiates the federal-differentiation claim made in §8 and §10 by tabulating the architectural features of the published AI-era instructional design frameworks reviewed in this work, plus the most-cited established models AAFL inherits from. The scan is not exhaustive; it is the working set against which v1.2 positions itself, and it should be expanded as additional frameworks are published or surfaced.
+This appendix substantiates the federal-differentiation claim made in §8 and §10 by tabulating the architectural features of the published AI-era instructional design frameworks reviewed in this work, plus the most-cited established models AAFL inherits from. The scan is not exhaustive; it is the working set against which AAFL positions itself, and it should be expanded as additional frameworks are published or surfaced.
 
-The columns are deliberately narrow architectural questions, not value judgments. *HITL gates?* asks whether the framework specifies named decision points where human judgment is irreducible. *Maturity model?* asks whether it prescribes progression levels with stopping points. *Classification caps?* asks whether maturity is tied to data-classification context (the federal-applicability question). *Eval discipline* names the framework's stated approach to assessing the work agents produce. *Primary contribution* names what the framework adds to the field.
+The columns are deliberately narrow architectural questions, not value judgments. *HITL gates?* asks whether the framework specifies named decision points where human judgment is irreducible. *Progression model?* asks whether it prescribes levels with stopping points. *Classification caps?* asks whether progression is tied to data-classification context (the federal-applicability question). *Eval discipline* names the framework's stated approach to assessing the work agents produce. *Primary contribution* names what the framework adds to the field.
 
-| Framework | Author / Year | Organizing outcome | HITL gates? | Maturity model? | Classification caps? | Eval discipline | Primary contribution |
+| Framework | Author / Year | Organizing outcome | HITL gates? | Progression model? | Classification caps? | Eval discipline | Primary contribution |
 |---|---|---|---|---|---|---|---|
-| **AAFL** | Bakshi (2026) | Workplace performance (Kirkpatrick L3/L4) | **Yes — 8 named gates with pedagogical/production split** | **Yes — PRS-1 → PRS-4 with prescribed caps** | **Yes — by data classification (the framework's distinctive federal claim)** | Eval-as-spec; blocking rubric authored at Gate 2 before Develop runs | Integration of all four: gates + maturity + caps + eval-as-spec |
+| **AAFL** | Bakshi (2026) | Workplace performance (Kirkpatrick L3/L4) | **Yes — 8 named gates with pedagogical/production split** | **Yes — PRS-1 → PRS-4 with prescribed caps** | **Yes — by data classification (the framework's distinctive federal claim)** | Eval-as-spec; blocking rubric authored at Gate 2 before Design or Develop runs | Integration of all four: gates + PRS + caps + eval-as-spec |
 | **ADDIE** | Branson et al. (1975) | Learning attainment (implicit) | No — phases, not decision gates | No | No | End-of-phase evaluation (Phase E) | The five-phase ID spine that the field still reads in |
 | **FRAME™** | Hardman (2025a) | Capability-risk management | No — risk zones, not decision gates | No | No | Task-specific quality-zone checks | Maps capability risk across the jagged frontier |
 | **Anthropic 4Ds** | Dakan & Feller (2023–2025) | Practitioner AI fluency | No — competencies, not gates | No | No | Diligence-as-audit (one of the four competencies) | Educator-facing AI fluency competencies |
@@ -958,11 +974,11 @@ The columns are deliberately narrow architectural questions, not value judgments
 
 ### Reading the scan
 
-**The integration is the contribution.** No single row above is unique to AAFL except the classification-caps column. The eight gates, the four-level maturity model, the eval-as-spec discipline, the workplace-performance organizing outcome — each individually has precedent or near-precedent in the cited works. What AAFL claims is the *integration*: a framework that simultaneously specifies (a) HITL decision gates with pedagogical/production classification, (b) a maturity model with prescribed caps, (c) caps that are *tied to data classification* rather than to capability or context-in-general, (d) an eval discipline that *blocks* the Develop phase until the rubric is signed, and (e) a governance layer that enforces all of the above. The scan shows no other reviewed framework occupies all five positions.
+**The integration is the contribution.** No single row above is unique to AAFL except the classification-caps column. The eight gates, the four-level PRS, the eval-as-spec discipline, the workplace-performance organizing outcome — each individually has precedent or near-precedent in the cited works. What AAFL claims is the *integration*: a framework that simultaneously specifies (a) HITL decision gates with pedagogical/production classification, (b) a four-level scale with prescribed caps, (c) caps that are *tied to data classification* rather than to capability or context-in-general, (d) an eval discipline that *blocks* the Develop phase until the rubric is signed, and (e) a governance layer that enforces all of the above. The scan shows no other reviewed framework occupies all five positions.
 
 **The federal-caps column is where AAFL is structurally distinct.** FRAME™, the 4Ds, and Chai et al. are all classification-agnostic frameworks. They could be operated in any context — commercial, federal, K-12, civilian or military — without changing their prescriptions. AAFL is the only reviewed framework whose architecture changes prescriptions based on the data-classification context of the work: classified content authoring caps at PRS-2; CUI training development can reach PRS-3 with approved infrastructure; public-trust unclassified high-volume work can reach PRS-4. This is the question federal contracting officers ask first, and AAFL's caps-by-classification framing is the framework's answer.
 
-**Scope limits.** This scan covers published AI-era ID frameworks at the time of v1.2 drafting (mid-2026). It does not exhaust the corporate-LMS-vendor space (Articulate, Synthesia, Vyond, etc., are tools — not frameworks — and live in the §1 capability claim, not here). It does not cover the broader AI-in-education academic literature beyond the AI-in-ID corner (Selwyn, Williamson, Holmes-Bialik-Fadel are engaged in §9 as critic-camp voices, not as competing frameworks). Additional frameworks should be added as they are surfaced; the comparative-scan structure is versioned with the framework.
+**Scope limits.** This scan covers published AI-era ID frameworks at the time of drafting (mid-2026). It does not exhaust the corporate-LMS-vendor space (Articulate, Synthesia, Vyond, etc., are tools — not frameworks — and live in the §1 capability claim, not here). It does not cover the broader AI-in-education academic literature beyond the AI-in-ID corner (Selwyn, Williamson, Holmes-Bialik-Fadel are engaged in §9 as critic-camp voices, not as competing frameworks). Additional frameworks should be added as they are surfaced; the comparative-scan structure is versioned with the framework.
 
 ---
 
