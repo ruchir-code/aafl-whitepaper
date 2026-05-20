@@ -12,13 +12,15 @@ abstract: >
 authors:
   - family-names: Bakshi
     given-names: Ruchir
+    orcid: "https://orcid.org/0009-0003-4069-4692"
     website: "https://rbakshi.com"
 type: report
-version: "1.2"
-date-released: 2026-05-14
+version: "1.3"
+date-released: 2026-05-20
 url: "https://instructionalai.org"
 repository-code: "https://github.com/ruchir-code/aafl-whitepaper"
-license-url: "https://github.com/ruchir-code/aafl-whitepaper/blob/main/LICENSE"
+license: "CC-BY-NC-4.0"
+license-url: "https://creativecommons.org/licenses/by-nc/4.0/"
 keywords:
   - instructional design
   - instructional systems design
