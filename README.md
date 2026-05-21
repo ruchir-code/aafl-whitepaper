@@ -6,7 +6,7 @@
 
 **Ruchir Bakshi** · [instructionalai.org](https://instructionalai.org)
 
-[![DOI](https://zenodo.org/badge/DOI/PENDING.svg)](https://doi.org/PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20319475.svg)](https://doi.org/10.5281/zenodo.20319475) (concept DOI — always resolves to latest version) · [v1.3 (frozen)](https://doi.org/10.5281/zenodo.20319476)
 
 ---
 
@@ -33,9 +33,9 @@ Prior versions (v1.2, v1.2.1) remain in the `whitepaper/` folder for traceabilit
 
 ## Cite it
 
-> Bakshi, R. (2026). *AAFL: An Agent-Augmented Framework for Learning* (v1.3). instructionalai.org. https://doi.org/PENDING
+> Bakshi, R. (2026). *AAFL: An Agent-Augmented Framework for Learning* (v1.3). Zenodo. https://doi.org/10.5281/zenodo.20319475
 
-Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff). Once the Zenodo DOI is minted, both this README and the CITATION.cff will be updated with the concept DOI (always-latest) and the v1.3 version DOI.
+The concept DOI above (`10.5281/zenodo.20319475`) always resolves to the latest version. For a frozen reference to v1.3 specifically, use the version DOI: https://doi.org/10.5281/zenodo.20319476. Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Build
 
