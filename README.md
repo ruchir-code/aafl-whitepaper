@@ -72,5 +72,5 @@ For commercial-licensing or special-use requests: **hello@rbakshi.com**.
 
 ## Related
 
-- **Site (in progress):** `aafl.instructionalai.org` — the framework's home in the instructionalai.org family of sites
-- **Author:** Ruchir Bakshi — [www.instructionalai.org](https://www.instructionalai.org)
+- **Site:** [www.instructionalai.org](https://www.instructionalai.org) — the framework's home in the instructionalai.org family of sites
+- **Author:** Ruchir Bakshi
