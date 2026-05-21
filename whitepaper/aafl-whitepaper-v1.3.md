@@ -2,21 +2,21 @@
 title: "AAFL — An Agent-Augmented Framework for Learning"
 subtitle: "Judgment, Gates, and Workplace Performance in the Agent Era"
 author: Ruchir Bakshi
-version: v1.3
-date: 2026-05-20
+version: v1.3.1
+date: 2026-05-21
 status: Foundation document — source of truth for derivative artifacts
 audience: Instructional design practitioners, federal L&D leaders, learning-science researchers, AI-in-education program leads
 length_target: 30–40 pages typeset
 typesetting: kami-compatible markdown
 ip_status: Independent IP, © Ruchir Bakshi 2026, licensed CC BY-NC 4.0
-suggested_citation: "Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.3). instructionalai.org."
+suggested_citation: "Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.3.1). Zenodo. https://doi.org/10.5281/zenodo.20319475"
 ---
 
 # AAFL — An Agent-Augmented Framework for Learning
 
 *Judgment, Gates, and Workplace Performance in the Agent Era*
 
-**Ruchir Bakshi** · v1.3 · 2026-05-20
+**Ruchir Bakshi** · v1.3.1 · 2026-05-21
 
 ---
 
@@ -24,7 +24,7 @@ suggested_citation: "Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for L
 
 AAFL is an independent framework. It is offered to the field as a working artifact: opinionated, citable, and revisable. The framework's intellectual debts are deep and broad; they are named in §9 as a substantive lineage rather than as plank-by-plank derivations, because AAFL is intended to read as a single synthesis, not a composite of borrowed parts. Critique should engage the framework on its own terms.
 
-This is v1.3 (2026-05-20).
+This is v1.3.1 (2026-05-21) — a repository-cleanup patch over v1.3 (2026-05-20). No content changes. The v1.2 artifacts that were carried inside the v1.3 deposit have been removed so the Zenodo archive contains v1.3 forward only.
 
 ---
 
@@ -797,7 +797,7 @@ The framework itself is exposed to the agent-era failure mode it warns against: 
 
 ### IP and authorship
 
-AAFL is independent IP authored by Ruchir Bakshi. The framework is offered to the field for citation, critique, and operational use. Suggested citation: *Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.3). Zenodo.* https://doi.org/10.5281/zenodo.20319475 (concept DOI — always-latest; v1.3 frozen at https://doi.org/10.5281/zenodo.20319476). © Ruchir Bakshi 2026. Licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/. Non-commercial citation, critique, translation, and academic re-use are permitted under the license terms; commercial re-use requires written permission from the author. Engagement with the framework on cited claims is welcome and expected; the engagement principle is *cite, don't pitch*.
+AAFL is independent IP authored by Ruchir Bakshi. The framework is offered to the field for citation, critique, and operational use. Suggested citation: *Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.3.1). Zenodo.* https://doi.org/10.5281/zenodo.20319475 (concept DOI — always-latest). © Ruchir Bakshi 2026. Licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/. Non-commercial citation, critique, translation, and academic re-use are permitted under the license terms; commercial re-use requires written permission from the author. Engagement with the framework on cited claims is welcome and expected; the engagement principle is *cite, don't pitch*.
 
 ---
 
@@ -969,7 +969,7 @@ Zhang, X., Zhang, C., Sun, J., Xiao, J., Yang, Y., & Luo, Y. (2025). *EduPlanner
 
 **Ruchir Bakshi** (ORCID: [0009-0003-4069-4692](https://orcid.org/0009-0003-4069-4692)) is a federal instructional design consultant. He has applied his AI-Enhanced ADDIE methodology across ACE-accredited graduate certificate and post-baccalaureate programs at the Center for Development of Security Excellence, and authored the AI Prompt Library for Instructional Systems Designers. He runs the [instructionalai.org](https://instructionalai.org) ecosystem of practitioner-first resources.
 
-AAFL is independent IP. © Ruchir Bakshi 2026, licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/. Suggested citation: *Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.3). Zenodo.* https://doi.org/10.5281/zenodo.20319475 (concept DOI — always-latest; v1.3 frozen at https://doi.org/10.5281/zenodo.20319476).
+AAFL is independent IP. © Ruchir Bakshi 2026, licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/. Suggested citation: *Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for Learning (v1.3.1). Zenodo.* https://doi.org/10.5281/zenodo.20319475 (concept DOI — always-latest).
 
 ---
 

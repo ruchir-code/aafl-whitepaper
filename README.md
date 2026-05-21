@@ -1,6 +1,6 @@
 # AAFL — An Agent-Augmented Framework for Learning
 
-**Whitepaper · v1.3 · 2026-05-20**
+**Whitepaper · v1.3.1 · 2026-05-21**
 
 *Judgment, Gates, and Workplace Performance in the Agent Era*
 
@@ -33,9 +33,9 @@ Prior versions (v1.2, v1.2.1) remain in the `whitepaper/` folder for traceabilit
 
 ## Cite it
 
-> Bakshi, R. (2026). *AAFL: An Agent-Augmented Framework for Learning* (v1.3). Zenodo. https://doi.org/10.5281/zenodo.20319475
+> Bakshi, R. (2026). *AAFL: An Agent-Augmented Framework for Learning* (v1.3.1). Zenodo. https://doi.org/10.5281/zenodo.20319475
 
-The concept DOI above (`10.5281/zenodo.20319475`) always resolves to the latest version. For a frozen reference to v1.3 specifically, use the version DOI: https://doi.org/10.5281/zenodo.20319476. Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
+The concept DOI above (`10.5281/zenodo.20319475`) always resolves to the latest version. Each release also has its own version DOI for frozen references. Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Build
 

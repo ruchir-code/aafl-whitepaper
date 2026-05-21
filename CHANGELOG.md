@@ -1,6 +1,15 @@
 # Changelog
 
-All notable changes to the AAFL whitepaper are documented here. v1.3 is the current revision; v1.2.1 was the prior peer-review-strengthening revision; v1.2 was the first review-readiness anchor; earlier versions (v1.0, v1.1) preceded the IP-anchoring decision and are recorded for historical completeness only.
+All notable changes to the AAFL whitepaper are documented here. v1.3.1 is the current revision; v1.3 was the first public release and DOI mint; v1.2.1 was the prior peer-review-strengthening revision; v1.2 was the first review-readiness anchor; earlier versions (v1.0, v1.1) preceded the IP-anchoring decision and are recorded for historical completeness only.
+
+## v1.3.1 — 2026-05-21
+
+Repository-cleanup patch. **No content changes.**
+
+- Removed v1.2 build artifacts (`whitepaper/aafl-whitepaper-v1.2.{md,html,docx,pdf}`) that had been carried inside the v1.3 GitHub release and therefore inside the Zenodo deposit. The v1.3 deposit had inadvertently archived two whitepaper versions side-by-side under different licenses (v1.2 was proprietary, v1.3 was CC BY-NC 4.0), creating license-status ambiguity and reader confusion. v1.3.1 deposit contains v1.3-forward artifacts only.
+- Removed superseded build scripts (`whitepaper/build.py`, `whitepaper/build-docx.py`) that targeted v1.2.
+- Updated CITATION.cff, README, and manuscript suggested citation to v1.3.1 metadata.
+- Concept DOI (`10.5281/zenodo.20319475`) unchanged — still resolves to the latest version. v1.3 frozen DOI (`10.5281/zenodo.20319476`) remains permanently citable.
 
 ## v1.3 — 2026-05-20
 
