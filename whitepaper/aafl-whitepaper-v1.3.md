@@ -24,7 +24,7 @@ suggested_citation: "Bakshi, R. (2026). AAFL: An Agent-Augmented Framework for L
 
 AAFL is an independent framework. It is offered to the field as a working artifact: opinionated, citable, and revisable. The framework's intellectual debts are deep and broad; they are named in §9 as a substantive lineage rather than as plank-by-plank derivations, because AAFL is intended to read as a single synthesis, not a composite of borrowed parts. Critique should engage the framework on its own terms.
 
-This is v1.3 (2026-05-20). Revision history is documented in `CHANGELOG.md` in the project repository; v1.3 incorporates a complete forensic citation pass over v1.2.1, three new bibliography sections (learning-sciences scaffolding tradition, AIED empirical baseline, expanded critic-camp engagement), a license transition from proprietary to **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** to maximize citability of the deposited artifact, and minor editorial corrections throughout. Architecture, eight HITL gates, PRS, and governance layer are unchanged in substance from v1.2.1.
+This is v1.3 (2026-05-20).
 
 ---
 
