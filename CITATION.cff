@@ -31,11 +31,14 @@ keywords:
   - human performance technology
   - federal training
   - agent-augmented learning
-doi: "10.5281/zenodo.20319476"
+doi: "10.5281/zenodo.20319535"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20319475"
     description: "Concept DOI (always resolves to latest version on Zenodo)."
   - type: doi
+    value: "10.5281/zenodo.20319535"
+    description: "Version DOI for v1.3.1 (frozen)."
+  - type: doi
     value: "10.5281/zenodo.20319476"
-    description: "Version DOI for v1.3 (frozen)."
+    description: "Version DOI for v1.3 (frozen, superseded by v1.3.1)."
